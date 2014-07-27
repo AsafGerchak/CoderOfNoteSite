@@ -250,6 +250,8 @@ CONTENT
 .content1 {
 	min-width: 850px;
 	padding: 50px 55px;
+	mask-image: url("../images/mask/mask02.png");
+	// mask-position: 0 0;
 }
 
 #headshot {
@@ -258,7 +260,7 @@ CONTENT
 	width: 20%;
 	min-width: 160px;
 	margin-right: -34px;
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 .about {
