@@ -302,9 +302,12 @@ header {
   -webkit-box-shadow: 0 5px 5px #604d49;
           box-shadow: 0 5px 5px #604d49; }
 
+.banner {
+  width: 80%;
+  margin: 0 auto; }
+
 .container {
-  width: 70%;
-  min-width: 825px;
+  width: 100%;
   margin: 0 auto; }
 
 .header-text {
@@ -321,18 +324,18 @@ header {
   margin: 0 auto; }
 
 .header-text ul {
-  color: #fff;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 0;
   text-transform: uppercase;
   letter-spacing: 1.5px; }
 
 .header-text li {
   display: inline;
-  background-color: #604d49;
-  border-radius: 2px;
-  margin: 0 10px;
-  padding: 7px 20px; }
+  font-size: 20px;
+  padding: 7px 4%;
+  border-right: 1px solid #604d49; }
+  .header-text li:last-child {
+    border: none; }
 
 /*
 =============================
@@ -349,9 +352,7 @@ CONTENT
 /* --Card 1 --*/
 .content1 {
   min-width: 850px;
-  padding: 50px 55px;
-  -webkit-mask-image: url("../images/mask/mask02.png");
-          mask-image: url("../images/mask/mask02.png"); }
+  padding: 50px 55px; }
 
 #headshot {
   border-radius: 50%;
