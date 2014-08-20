@@ -38,7 +38,7 @@ module.exports = function(grunt) {
    connect: {
    	server: {
    		options: {
-   			port: 8000,
+   			port: '8000',
    			base: ''
    		}
    	}
@@ -65,5 +65,5 @@ grunt.loadNpmTasks('grunt-contrib-connect');
 grunt.loadNpmTasks('grunt-recess');
 
  // Default task(s).
- grunt.registerTask('default', ['connect','watch']);
+ grunt.registerTask('default', ['sass','autoprefixer','recess','connect','watch']);
 };
