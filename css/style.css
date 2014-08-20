@@ -362,10 +362,12 @@ header {
 CONTENT
 =============================
 */
+.wrapper {
+  width: 75%;
+  margin: 40px auto 0 auto; }
+
 .content {
-  background-color: #fff;
-  margin: 40px auto 0 auto;
-  width: 75%; }
+  background-color: #fff; }
 
 /* --Card 1 --*/
 .content1 {
@@ -387,14 +389,11 @@ CONTENT
   padding: 15px 0 15px 20px; }
 
 /* -- Cards 2 and 3 -- */
-.wrapper {
-  width: 75%;
-  margin: 10px auto 0 auto; }
-
 .content2 {
-  width: 60%;
+  width: 61%;
+  height: 100%;
   float: left;
-  margin-right: 5%;
+  margin-right: 4%;
   padding: 50px 40px 23px 40px; }
 
 dt {
@@ -409,6 +408,7 @@ dt {
 
 .aside {
   width: 35%;
+  height: 100%;
   float: left;
   margin-bottom: 100px;
   padding: 50px 40px 30px 40px; }

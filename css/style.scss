@@ -289,10 +289,16 @@ CONTENT
 =============================
 */
 
+.wrapper {
+	width: 75%;
+	// min-width: 850px;
+	margin: 40px auto 0 auto;
+}
+
 .content {
 	background-color: #fff;
-	margin: 40px auto 0 auto;
-	width: 75%;
+	// margin: 40px auto 0 auto;
+	// width: 75%;
 	// box-shadow: 5px 5px 5px #604d49;
 }
 
@@ -326,16 +332,11 @@ CONTENT
 
 /* -- Cards 2 and 3 -- */
 
-.wrapper {
-	width: 75%;
-	// min-width: 850px;
-	margin: 10px auto 0 auto;
-}
-
 .content2 {
-	width: 60%;
+	width: 61%;
+	height: 100%;
 	float: left;
-	margin-right: 5%;
+	margin-right: 4%;
 	padding: 50px 40px 23px 40px;
 }
 
@@ -354,6 +355,7 @@ dt {
 
 .aside {
 	width: 35%;
+	height: 100%;
 	float: left;
 	margin-bottom: 100px;
 	padding: 50px 40px 30px 40px;
