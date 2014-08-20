@@ -164,6 +164,7 @@ td, th {
   clear: both;
   height: 0; }
 
+/* === Sass Variables === */
 body,
 html {
   height: 100%; }
@@ -239,7 +240,7 @@ WALLPAPER
 =============================
 */
 body {
-  background-image: url(../images/damaskbackground.jpg);
+  background-image: url("../images/HipsterSet03.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
@@ -252,14 +253,19 @@ LOGO
 /* --Header Logo-- */
 .logo {
   margin: 0 auto;
-  width: 500px;
+  width: 60%;
+  height: 47.5%;
   padding-top: 8%; }
 
 .logo-image {
   float: left;
   width: 20%;
+  height: 100%;
   margin-right: -10px;
   padding-top: 12px; }
+  .logo-image .logoLetter {
+    fill: #604d49;
+    height: 100%; }
 
 .logo-text {
   float: left;
@@ -298,12 +304,11 @@ header {
   background-color: #fff;
   height: 115%;
   min-height: 600px;
-  width: auto;
-  -webkit-box-shadow: 0 5px 5px #604d49;
-          box-shadow: 0 5px 5px #604d49; }
+  width: auto; }
 
 .banner {
   width: 80%;
+  height: 80%;
   margin: 0 auto; }
 
 .container {
@@ -360,13 +365,10 @@ CONTENT
 .content {
   background-color: #fff;
   margin: 40px auto 0 auto;
-  width: 70%;
-  -webkit-box-shadow: 5px 5px 5px #604d49;
-          box-shadow: 5px 5px 5px #604d49; }
+  width: 75%; }
 
 /* --Card 1 --*/
 .content1 {
-  min-width: 850px;
   padding: 50px 55px; }
 
 #headshot {
@@ -386,8 +388,7 @@ CONTENT
 
 /* -- Cards 2 and 3 -- */
 .wrapper {
-  width: 70%;
-  min-width: 850px;
+  width: 75%;
   margin: 10px auto 0 auto; }
 
 .content2 {

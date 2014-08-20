@@ -21,13 +21,18 @@ GENERAL STYLES
 				height: 0;
 }
 
+
+/* === Sass Variables === */
+$font: #604d49;
+
+
 body,
 html {
 	height: 100%;
 }
 
 body {
-	color: #604d49;
+	color: $font;
 	font-family: 'Rosario', sans-serif;
 	font-weight: 400;
 }
@@ -113,7 +118,8 @@ WALLPAPER
 */
 
 body {
-	background-image: url(../images/damaskbackground.jpg);
+	// background-image: url(../images/damaskbackground.jpg);
+	background-image: url('../images/HipsterSet03.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -131,15 +137,23 @@ LOGO
 
 .logo {
 	margin: 0 auto;
-	width: 500px;
+	// width: 500px;
+	width: 60%;
+	height: 47.5%;
 	padding-top: 8%;
 }
 
 .logo-image {
 	float: left;
 	width: 20%;
+	height: 100%;
 	margin-right: -10px;
 	padding-top: 12px;
+
+		.logoLetter {
+			fill: $font;
+			height: 100%;
+		}
 }
 
 .logo-text {
@@ -190,11 +204,12 @@ header {
 	height: 115%;
 	min-height: 600px;
 	width: auto;
-	box-shadow: 0 5px 5px #604d49;
+	// box-shadow: 0 5px 5px #604d49;
 }
 
 .banner {
 	width: 80%;
+	height: 80%;
 	margin: 0 auto;
 }
 
@@ -277,15 +292,15 @@ CONTENT
 .content {
 	background-color: #fff;
 	margin: 40px auto 0 auto;
-	width: 70%;
-	box-shadow: 5px 5px 5px #604d49;
+	width: 75%;
+	// box-shadow: 5px 5px 5px #604d49;
 }
 
 
 /* --Card 1 --*/
 
 .content1 {
-	min-width: 850px;
+	// min-width: 850px;
 	padding: 50px 55px;
 	// mask-image: url("../images/mask/mask02.png");
 	// mask-position: 0 0;
@@ -312,8 +327,8 @@ CONTENT
 /* -- Cards 2 and 3 -- */
 
 .wrapper {
-	width: 70%;
-	min-width: 850px;
+	width: 75%;
+	// min-width: 850px;
 	margin: 10px auto 0 auto;
 }
 
