@@ -73,7 +73,7 @@ h4 {
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 1;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	margin-bottom: .5em;
 }
 
@@ -138,32 +138,55 @@ LOGO
 .logo {
 	margin: 0 auto;
 	// width: 500px;
-	width: 60%;
-	height: 47.5%;
-	padding-top: 8%;
-}
+	width: 70%;
+	// height: 47.5%;
+	height: auto;
+	padding-top: 8.5%;
+	padding-left: 13.6%;
+	position: relative;
 
-.logo-image {
-	float: left;
-	width: 20%;
-	height: 100%;
-	margin-right: -10px;
-	padding-top: 12px;
+	.logoContent {
 
-		.logoLetter {
-			fill: $font;
+		.logo-image {
+			float: left;
+			width: 25%;
 			height: 100%;
-		}
-}
+			padding-top: 3.5%;
 
-.logo-text {
-	float: left;
-	text-align: left;
-	background-color: #fff;
-	border-left: 1px solid #604d49;
-	padding: 70px 0 70px 13px;
-	width: 80%;
-}
+				.logoLetter {
+					fill: $font;
+					height: auto;
+					width: 96%;
+				}
+		} // End 
+
+		.logo-text {
+			float: left;
+			position: absolute;
+			right: 13.6%;
+			text-align: left;
+			background-color: #fff;
+			border-left: 1px solid #604d49;
+			padding: 10% 0 7% 4%;
+			width: 52%;
+			height: auto;
+			transition: all 1s;
+
+			.logoWordmark {
+				fill: $font;
+				height: auto;
+				width: 100%;
+			}
+		} // End .logo-text
+
+		&:hover {
+
+			.logo-text {
+				right: 7%;
+			}
+		} // End .logoContent:hover
+	} //End .logoContent
+} // End .logo
 
 
 /* --Footer Logo-- */
@@ -202,7 +225,7 @@ JUMBOTRON
 header {
 	background-color: #fff;
 	height: 115%;
-	min-height: 600px;
+	// min-height: 600px;
 	width: auto;
 	// box-shadow: 0 5px 5px #604d49;
 }
@@ -221,8 +244,14 @@ header {
 
 .header-text {
 	clear: both;
-	margin: 60px auto;
+	margin: 7% auto;
 	text-align: center;
+
+	.brief {
+		width: 55%;
+		margin: 0 auto;
+	}
+
 }
 
 .header-text p {/*
@@ -252,7 +281,7 @@ header {
 .header-text li {
 	display: inline;
 	// background-color: #604d49;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 400;
 	padding: 7px 4%;
 	// border-radius: 2px;
@@ -264,22 +293,10 @@ header {
 		&:last-child {
 			border: none;
 		}
-}
+} // End .header-text li
 
-.scroll {
-	margin-top: 5%;
-}
-
-.arrow {
-	background-color: #604d49;
-	// width: 30px;
-	color: #fff;
-	font-weight: 700;
-	border-radius: 50%;
-	// line-height: 2;
-	// text-align: center;
-	padding: 1% 1.3%;
-	margin: 0 1%;
+.fa-angle-double-down {
+	font-size: 60px;
 }
 
 
@@ -290,7 +307,7 @@ CONTENT
 */
 
 .wrapper {
-	width: 75%;
+	width: 80%;
 	// min-width: 850px;
 	margin: 40px auto 0 auto;
 }
@@ -403,7 +420,7 @@ footer {
 	width: 100%;
 	margin-bottom: 50px;
 	height: 200px;
-	box-shadow: 0 5px 5px #604d49;
+	// box-shadow: 0 5px 5px #604d49;
 }
 
 .logo-small {
