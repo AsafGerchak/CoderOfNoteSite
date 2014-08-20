@@ -272,7 +272,7 @@ LOGO
     position: absolute;
     right: 13.6%;
     text-align: left;
-    background-color: #fff;
+    background-color: white;
     border-left: 1px solid #604d49;
     padding: 10% 0 7% 4%;
     width: 52%;
@@ -312,7 +312,7 @@ JUMBOTRON
 =============================
 */
 header {
-  background-color: #fff;
+  background-color: white;
   height: 115%;
   width: auto; }
 
@@ -372,7 +372,7 @@ CONTENT
   margin: 40px auto 0 auto; }
 
 .content {
-  background-color: #fff; }
+  background-color: white; }
 
 /* --Card 1 --*/
 .content1 {
@@ -389,7 +389,7 @@ CONTENT
 .about {
   float: left;
   width: 80%;
-  background-color: #fff;
+  background-color: white;
   border-left: 1px solid #604d49;
   padding: 15px 0 15px 20px; }
 
@@ -429,7 +429,7 @@ dt {
 .social h5 {
   float: left;
   width: 80%;
-  background-color: #fff;
+  background-color: white;
   border-left: 1px solid #604d49;
   padding: 16px 0 16px 7px;
   margin-bottom: 25px; }

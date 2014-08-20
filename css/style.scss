@@ -24,6 +24,9 @@ GENERAL STYLES
 
 /* === Sass Variables === */
 $font: #604d49;
+// $plainBack: #fbfbed;
+// $plainBack: #f3f3e3;
+$plainBack: #fff;
 
 
 body,
@@ -102,7 +105,7 @@ ul {
 }
 
 a {
-	color: #604d49;
+	color: $font;
 	text-decoration: none;
 }
 
@@ -165,8 +168,8 @@ LOGO
 			position: absolute;
 			right: 13.6%;
 			text-align: left;
-			background-color: #fff;
-			border-left: 1px solid #604d49;
+			background-color: $plainBack;
+			border-left: 1px solid $font;
 			padding: 10% 0 7% 4%;
 			width: 52%;
 			height: auto;
@@ -223,11 +226,11 @@ JUMBOTRON
 */
 
 header {
-	background-color: #fff;
+	background-color: $plainBack;
 	height: 115%;
 	// min-height: 600px;
 	width: auto;
-	// box-shadow: 0 5px 5px #604d49;
+	// box-shadow: 0 5px 5px $font;
 }
 
 .banner {
@@ -269,7 +272,7 @@ header {
 }
 
 .header-text ul {
-	// color: #fff;
+	// color: $plainBack;
 	
 	// font-size: 20px;
 	font-size: 0;
@@ -280,12 +283,12 @@ header {
 
 .header-text li {
 	display: inline;
-	// background-color: #604d49;
+	// background-color: $font;
 	font-size: 22px;
 	font-weight: 400;
 	padding: 7px 4%;
 	// border-radius: 2px;
-	border-right: 1px solid #604d49;
+	border-right: 1px solid $font;
 	// margin: 0 10px;
 	// margin: 0 1%;
 	// padding: 7px 20px;
@@ -313,10 +316,10 @@ CONTENT
 }
 
 .content {
-	background-color: #fff;
+	background-color: $plainBack;
 	// margin: 40px auto 0 auto;
 	// width: 75%;
-	// box-shadow: 5px 5px 5px #604d49;
+	// box-shadow: 5px 5px 5px $font;
 }
 
 
@@ -341,8 +344,8 @@ CONTENT
 .about {
 	float: left;
 	width: 80%;
-	background-color: #fff;
-	border-left: 1px solid #604d49;	
+	background-color: $plainBack;
+	border-left: 1px solid $font;	
 	padding: 15px 0 15px 20px;
 }
 
@@ -391,8 +394,8 @@ dt {
 .social h5 {
 	float: left;
 	width: 80%;
-	background-color: #fff;
-	border-left: 1px solid #604d49;
+	background-color: $plainBack;
+	border-left: 1px solid $font;
 	padding: 16px 0 16px 7px;
 	margin-bottom: 25px;
 }
@@ -420,7 +423,7 @@ footer {
 	width: 100%;
 	margin-bottom: 50px;
 	height: 200px;
-	// box-shadow: 0 5px 5px #604d49;
+	// box-shadow: 0 5px 5px $font;
 }
 
 .logo-small {
