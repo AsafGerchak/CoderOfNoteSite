@@ -184,28 +184,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 h1 {
   font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 2.5px;
-  line-height: 1; }
-
-h2 {
-  font-weight: 400;
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 15px;
-  line-height: 1; }
-
-h3 {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.5; }
 
-h4 {
+h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 1;
   letter-spacing: 1px;
   margin-bottom: .5em; }
+
+h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5; }
 
 h5 {
   font-weight: 700;
@@ -255,8 +247,7 @@ LOGO
   margin: 0 auto;
   width: 70%;
   height: auto;
-  padding-top: 8.5%;
-  padding-left: 13.6%;
+  padding: 8.5% 0 0 12%;
   position: relative; }
   .logo .logoContent .logo-image {
     float: left;
@@ -270,7 +261,7 @@ LOGO
   .logo .logoContent .logo-text {
     float: left;
     position: absolute;
-    right: 13.6%;
+    right: 15.5%;
     text-align: left;
     background-color: white;
     border-left: 1px solid #604d49;
@@ -284,7 +275,7 @@ LOGO
       height: auto;
       width: 100%; }
   .logo .logoContent:hover .logo-text {
-    right: 7%; }
+    right: 8%; }
 
 /* --Footer Logo-- */
 .logo-small {
@@ -347,8 +338,7 @@ header {
 .header-text ul {
   font-size: 0;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: 4%; }
+  letter-spacing: 1.5px; }
 
 .header-text li {
   display: inline;
@@ -360,7 +350,12 @@ header {
     border: none; }
 
 .fa-angle-double-down {
-  font-size: 60px; }
+  font-size: 60px;
+  margin-top: 3%;
+  -webkit-transition: all 1s;
+          transition: all 1s; }
+  .fa-angle-double-down:hover {
+    margin-top: 5%; }
 
 /*
 =============================
@@ -374,7 +369,7 @@ CONTENT
 .content {
   background-color: white; }
 
-/* --Card 1 --*/
+/* === Card 1 === */
 .content1 {
   padding: 50px 55px; }
 
@@ -393,22 +388,64 @@ CONTENT
   border-left: 1px solid #604d49;
   padding: 15px 0 15px 20px; }
 
-/* -- Cards 2 and 3 -- */
-.content2 {
-  width: 61%;
+/* === FAQ Card === */
+.faq {
+  margin-bottom: 7%; }
+
+.questions {
+  width: 40%;
   height: 100%;
   float: left;
-  margin-right: 4%;
-  padding: 50px 40px 23px 40px; }
+  margin-right: 3%;
+  padding: 4% 5% 3% 5%; }
+  .questions .qButton {
+    padding: 4% 0;
+    margin: 0.5% 0;
+    cursor: pointer;
+    position: relative; }
+    .questions .qButton .qmark {
+      display: inline-block;
+      width: 18%;
+      vertical-align: middle; }
+      .questions .qButton .qmark .qmarkIcon {
+        fill: #604d49;
+        width: 100%;
+        -webkit-transition: all 0.6s;
+                transition: all 0.6s; }
+    .questions .qButton .ask {
+      display: inline-block;
+      width: 79%;
+      height: auto;
+      padding: 3% 0 3% 5%;
+      background-color: white;
+      border-left: 2px solid #604d49;
+      vertical-align: middle;
+      position: relative;
+      right: 7.5%;
+      top: 0;
+      -webkit-transition: all 0.6s;
+              transition: all 0.6s; }
+    .questions .qButton:hover .qmarkIcon {
+      fill: #68c2c3; }
+    .questions .qButton:hover .ask {
+      right: 0.5%;
+      color: #68c2c3;
+      border-color: #68c2c3; }
+
+.answers {
+  width: 57%;
+  height: 100%;
+  float: left;
+  padding: 5% 6%; }
 
 dt {
   font-weight: 700;
   margin: 2px 0; }
 
-.content2 a {
+.questions a {
   color: #c1a39d; }
 
-.content2 a:hover {
+.questions a:hover {
   color: #68c2c3; }
 
 .aside {

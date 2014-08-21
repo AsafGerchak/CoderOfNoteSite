@@ -24,6 +24,7 @@ GENERAL STYLES
 
 /* === Sass Variables === */
 $font: #604d49;
+$linkHover: #68c2c3;
 // $plainBack: #fbfbed;
 // $plainBack: #f3f3e3;
 $plainBack: #fff;
@@ -51,33 +52,39 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
 }
 
+// h1 {
+// 	font-weight: 400;
+// 	font-size: 60px;
+// 	letter-spacing: 2.5px;
+// 	line-height: 1;
+// }
+
+// h2 {
+// 	font-weight: 400;
+// 	font-size: 24px;
+// 	text-transform: uppercase;
+// 	letter-spacing: 15px;
+// 	line-height: 1;
+// }
+
 h1 {
-	font-weight: 400;
-	font-size: 60px;
-	letter-spacing: 2.5px;
-	line-height: 1;
-}
-
-h2 {
-	font-weight: 400;
-	font-size: 24px;
-	text-transform: uppercase;
-	letter-spacing: 15px;
-	line-height: 1;
-}
-
-h3 {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.5;
 }
 
-h4 {
+h2 {
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 1;
 	letter-spacing: 1px;
 	margin-bottom: .5em;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 1.5;	
 }
 
 h5 {
@@ -110,7 +117,7 @@ a {
 }
 
 a:hover {
-	color: #68c2c3;
+	color: $linkHover
 }
 
 
@@ -144,8 +151,8 @@ LOGO
 	width: 70%;
 	// height: 47.5%;
 	height: auto;
-	padding-top: 8.5%;
-	padding-left: 13.6%;
+	padding: 8.5% 0 0 12%;
+	// padding-left: 12%;
 	position: relative;
 
 	.logoContent {
@@ -166,7 +173,7 @@ LOGO
 		.logo-text {
 			float: left;
 			position: absolute;
-			right: 13.6%;
+			right: 15.5%;
 			text-align: left;
 			background-color: $plainBack;
 			border-left: 1px solid $font;
@@ -185,7 +192,7 @@ LOGO
 		&:hover {
 
 			.logo-text {
-				right: 7%;
+				right: 8%;
 			}
 		} // End .logoContent:hover
 	} //End .logoContent
@@ -278,7 +285,7 @@ header {
 	font-size: 0;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	margin-bottom: 4%;
+	// margin-bottom: 4%;
 }
 
 .header-text li {
@@ -300,6 +307,12 @@ header {
 
 .fa-angle-double-down {
 	font-size: 60px;
+	margin-top: 3%;
+	transition: all 1s;
+
+	&:hover {
+		margin-top: 5%;
+	}
 }
 
 
@@ -323,7 +336,7 @@ CONTENT
 }
 
 
-/* --Card 1 --*/
+/* === Card 1 === */
 
 .content1 {
 	// min-width: 850px;
@@ -350,27 +363,103 @@ CONTENT
 }
 
 
-/* -- Cards 2 and 3 -- */
+/* === FAQ Card === */
 
-.content2 {
-	width: 61%;
+.faq {
+	margin-bottom: 7%;
+}
+
+.questions {
+	width: 40%;
 	height: 100%;
 	float: left;
-	margin-right: 4%;
-	padding: 50px 40px 23px 40px;
-}
+	margin-right: 3%;
+	// padding: 50px 40px 50px 40px;
+	padding: 4% 5% 3% 5%;
+
+	.qButton {
+		padding: 4% 0;
+		margin: 0.5% 0;
+		cursor: pointer;
+		position: relative;
+
+		.qmark {
+			// float: left;
+			display: inline-block;
+			width: 18%;
+			// height: 100%;
+			// height: auto;
+			vertical-align: middle;
+			// padding: 10% 0;
+
+			// .fa-question {
+			// 	// font-size: 300%;
+			// 	// font-size: 50px;
+			// 	width: 600%;
+			// }
+
+			.qmarkIcon {
+				fill: $font;
+				// height: 80%;
+				width: 100%;
+				transition: all 0.6s;
+			}
+
+		} // End .qmark
+
+		.ask {
+			// float: left;
+			display: inline-block;
+			width: 79%;
+			height: auto;
+			padding: 3% 0 3% 5%;
+			background-color: $plainBack;
+			// margin: 4% 0;
+			border-left: 2px solid $font;
+			vertical-align: middle;
+			position: relative;
+			right: 7.5%;
+			top: 0;
+			transition: all 0.6s;
+
+			// &:hover {
+			// 	right: 0.5%;
+			// }
+		} // End .ask
+
+		&:hover {
+
+			.qmarkIcon {
+				fill: $linkHover;
+			}
+
+			.ask {
+				right: 0.5%;
+				color: $linkHover;
+				border-color: $linkHover;
+			}
+		} //End .qButton:hover
+	} // End .qButton
+} // End .question
+
+.answers {
+	width: 57%;
+	height: 100%;
+	float: left;
+	padding: 5% 6%;
+} 
 
 dt {
 	font-weight: 700;
 	margin: 2px 0;
 }
 
-.content2 a {
+.questions a {
 	color: #c1a39d;
 }
 
-.content2 a:hover {
-	color: #68c2c3;
+.questions a:hover {
+	color: $linkHover;
 }
 
 .aside {
@@ -401,7 +490,7 @@ dt {
 }
 
 .social a:hover h5 {
-	border-left: 1px solid #68c2c3;
+	border-left: 1px solid $linkHover;
 }
 
 /* 
@@ -444,5 +533,5 @@ color: #c1a39d;
 }
 
 .copyright a:hover {
-	color: #68c2c3;
+	color: $linkHover;
 }
