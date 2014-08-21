@@ -1,58 +1,36 @@
-/*
-=========================
-FAQ SECTION
-=========================
-*/
 
-faq1App = {};
+$(function(){
 
-faq1App.init = function(){
-	console.log('FUUCCCCKK')
-	$('#answer1').addClass('answerIn');
-	$('#qButton1').on('click', function(){	
-		console.log('What')
-		$('#answer1').removeClass('answerIn');
+	// SMOOTH SCROLL
+
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+
+  
+  //FAQ BUTTONS
+
+  $('#qButton1').on('click', function(){
+		$('#answer1').toggleClass('answerIn');
 	});
-};
 
-
-faq2App = {};
-
-faq2App.init = function(){
-	console.log('FUUCCCCKK')
-	$('#answer2').addClass('answerIn');
-	$('#qButton2').on('click', function(){	
-		console.log('What')
-		$('#answer2').removeClass('answerIn');
+	$('#qButton2').on('click', function(){
+		$('#answer2').toggleClass('answerIn');
 	});
-};
 
-
-faq3App = {};
-
-faq3App.init = function(){
-	console.log('FUUCCCCKK')
-	$('#answer3').addClass('answerIn');
-	$('#qButton3').on('click', function(){	
-		console.log('What')
-		$('#answer3').removeClass('answerIn');
+	$('#qButton3').on('click', function(){
+		$('#answer3').toggleClass('answerIn');
 	});
-};
 
-/*
-=========================
-DOCUMENT READY
-=========================
-*/
-
-$('#qButton1').on('click', function(){
-	faq1App.init();
-});
-
-$('#qButton2').on('click', function(){
-	faq2App.init();
-});
-
-$('#qButton3').on('click', function(){
-	faq3App.init();
 });
