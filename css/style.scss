@@ -39,6 +39,7 @@ body {
 	color: $font;
 	font-family: 'Rosario', sans-serif;
 	font-weight: 400;
+	overflow-x: hidden;
 }
 
 
@@ -324,6 +325,7 @@ CONTENT
 
 .wrapper {
 	width: 80%;
+	max-width: 1500px;
 	// min-width: 850px;
 	margin: 40px auto 0 auto;
 }
@@ -336,7 +338,7 @@ CONTENT
 }
 
 
-/* === Card 1 === */
+/* ========= Card 1 ========= */
 
 .content1 {
 	// min-width: 850px;
@@ -363,7 +365,7 @@ CONTENT
 }
 
 
-/* === FAQ Card === */
+/* ========= FAQ Questions Card ========= */
 
 .faq {
 	margin-bottom: 7%;
@@ -442,56 +444,90 @@ CONTENT
 	} // End .qButton
 } // End .question
 
+
+/* ========= FAQ Answers Cards =========*/
+
 .answers {
 	width: 57%;
 	height: 100%;
 	float: left;
-	padding: 5% 6%;
-} 
+	// overflow: hidden;
 
-dt {
-	font-weight: 700;
-	margin: 2px 0;
-}
+	.answerHead {
+		// width: 57%;
+		height: 100%;
+		// float: left;
+		padding: 6% 6% 4% 6%;
 
-.questions a {
-	color: #c1a39d;
-}
+		.umph {
+			font-style: italic;
+		}
+	} //End .answerHead
 
-.questions a:hover {
-	color: $linkHover;
-}
+	.ansCard {
+		position: relative;
+		right: -200%;
+		padding: 5% 6%;
+		margin: 2% 0;
+		transition: all 1.5s;
 
-.aside {
-	width: 35%;
-	height: 100%;
-	float: left;
-	margin-bottom: 100px;
-	padding: 50px 40px 30px 40px;
-}
+		&:nth-child(1) {
+			margin-top: 0;
+		}
+	} // End .ansCard
 
-.social img {
-	float: left;
-	width: 20%;
-	margin-right: -8px;
-}
+	.answerIn {
+		right: 0;
+	}
 
-.social1 {
-	margin-top: 30px;
-}
+} // End .answers
 
-.social h5 {
-	float: left;
-	width: 80%;
-	background-color: $plainBack;
-	border-left: 1px solid $font;
-	padding: 16px 0 16px 7px;
-	margin-bottom: 25px;
-}
 
-.social a:hover h5 {
-	border-left: 1px solid $linkHover;
-}
+
+
+// dt {
+// 	font-weight: 700;
+// 	margin: 2px 0;
+// }
+
+// .questions a {
+// 	color: #c1a39d;
+// }
+
+// .questions a:hover {
+// 	color: $linkHover;
+// }
+
+// .aside {
+// 	width: 35%;
+// 	height: 100%;
+// 	float: left;
+// 	margin-bottom: 100px;
+// 	padding: 50px 40px 30px 40px;
+// }
+
+// .social img {
+// 	float: left;
+// 	width: 20%;
+// 	margin-right: -8px;
+// }
+
+// .social1 {
+// 	margin-top: 30px;
+// }
+
+// .social h5 {
+// 	float: left;
+// 	width: 80%;
+// 	background-color: $plainBack;
+// 	border-left: 1px solid $font;
+// 	padding: 16px 0 16px 7px;
+// 	margin-bottom: 25px;
+// }
+
+// .social a:hover h5 {
+// 	border-left: 1px solid $linkHover;
+// }
 
 /* 
 ------------------------------

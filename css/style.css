@@ -172,7 +172,8 @@ html {
 body {
   color: #604d49;
   font-family: 'Rosario', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  overflow-x: hidden; }
 
 /*
 =============================
@@ -364,12 +365,13 @@ CONTENT
 */
 .wrapper {
   width: 80%;
+  max-width: 1500px;
   margin: 40px auto 0 auto; }
 
 .content {
   background-color: white; }
 
-/* === Card 1 === */
+/* ========= Card 1 ========= */
 .content1 {
   padding: 50px 55px; }
 
@@ -388,7 +390,7 @@ CONTENT
   border-left: 1px solid #604d49;
   padding: 15px 0 15px 20px; }
 
-/* === FAQ Card === */
+/* ========= FAQ Questions Card ========= */
 .faq {
   margin-bottom: 7%; }
 
@@ -432,47 +434,27 @@ CONTENT
       color: #68c2c3;
       border-color: #68c2c3; }
 
+/* ========= FAQ Answers Cards =========*/
 .answers {
   width: 57%;
   height: 100%;
-  float: left;
-  padding: 5% 6%; }
-
-dt {
-  font-weight: 700;
-  margin: 2px 0; }
-
-.questions a {
-  color: #c1a39d; }
-
-.questions a:hover {
-  color: #68c2c3; }
-
-.aside {
-  width: 35%;
-  height: 100%;
-  float: left;
-  margin-bottom: 100px;
-  padding: 50px 40px 30px 40px; }
-
-.social img {
-  float: left;
-  width: 20%;
-  margin-right: -8px; }
-
-.social1 {
-  margin-top: 30px; }
-
-.social h5 {
-  float: left;
-  width: 80%;
-  background-color: white;
-  border-left: 1px solid #604d49;
-  padding: 16px 0 16px 7px;
-  margin-bottom: 25px; }
-
-.social a:hover h5 {
-  border-left: 1px solid #68c2c3; }
+  float: left; }
+  .answers .answerHead {
+    height: 100%;
+    padding: 6% 6% 4% 6%; }
+    .answers .answerHead .umph {
+      font-style: italic; }
+  .answers .ansCard {
+    position: relative;
+    right: -200%;
+    padding: 5% 6%;
+    margin: 2% 0;
+    -webkit-transition: all 1.5s;
+            transition: all 1.5s; }
+    .answers .ansCard:nth-child(1) {
+      margin-top: 0; }
+  .answers .answerIn {
+    right: 0; }
 
 /* 
 ------------------------------

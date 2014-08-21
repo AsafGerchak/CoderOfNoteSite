@@ -245,7 +245,7 @@
 
 			<h2>Inquiring Minds Want to Know</h2>
 
-			<div class="qButton clearfix">
+			<div class="qButton clearfix" id="qButton1">
 				<div class="qmark">
 
 					<svg class="qmarkIcon" data-icon="question-mark" data-container-transform="translate(6)" viewBox="0 0 32 32">
@@ -260,7 +260,7 @@
 				</div>
 			</div> <!-- /.qButton -->
 
-			<div class="qButton clearfix">
+			<div class="qButton clearfix" id="qButton2">
 				<div class="qmark">
 
 					<svg class="qmarkIcon" data-icon="question-mark" data-container-transform="translate(6)" viewBox="0 0 32 32">
@@ -275,7 +275,7 @@
 				</div>
 			</div> <!-- /.qButton -->
 
-			<div class="qButton clearfix">
+			<div class="qButton clearfix" id="qButton3">
 				<div class="qmark">
 
 					<svg class="qmarkIcon" data-icon="question-mark" data-container-transform="translate(6)" viewBox="0 0 32 32">
@@ -292,24 +292,30 @@
 			
 		</div> <!-- /.questions -->
 
-		<div class="content answers">
+		<div class="answers">
 
-			<div class="answer1">
+			<!-- <div class="content answerHead">
+
+				<h2>Inquiring Minds <span class="umph">Will</span> Know</h2>
+
+			</div> --> <!-- /.answerHead -->
+
+			<div class="content ansCard" id="answer1">
 				<h1>I have a BA in Anthropology from McGill and am a recent grad of HackerYou's front-end web development course.</h1>
 			</div> <!-- /.answer1 -->
 
-			<div class="answer2">
+			<div class="content ansCard" id="answer2">
 				<h1>Yes, actually and seriously. You can check me out over at <a href="http://twitter.com/ComedianOfNote" target="_blank">@ComedianOfNote</a> or on <a href="http://facebook.com/ComedianOfNote" target="_blank">my Facebook fan page</a>.</h1>
 			</div> <!-- /.answer2 -->
 
-			<div class="answer3">
+			<div class="content ansCard" id="answer3">
 				<h1>Better question: What's up with you using my name to address me over and over like this? It's a bit weird.</h1>
 				<h1>My name is Hebrew-Polish. Also, sorry I got sort-of aggressive just there.</h1>
 			</div> <!-- /.answer3 -->
-			
+
 		</div> <!-- /.answers -->
 
-	</div> <!-- /.wrapper -->
+</div> <!-- /.wrapper -->
 
 	<!-- <div class="wrapper clearfix">
 
@@ -374,6 +380,8 @@
 		</div> <!-- /.banner -->
 	</footer>
 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 	
 </body>
 </html>
