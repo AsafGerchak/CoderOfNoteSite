@@ -27,7 +27,17 @@ $font: #604d49;
 $linkHover: #68c2c3;
 // $plainBack: #fbfbed;
 // $plainBack: #f3f3e3;
-$plainBack: #fff;
+// $plainBack: #fff;
+// $plainBack: url('../images/background/crossword/crossword.png');
+// $plainBack: url('../images/background/fabric_of_squares_gray/fabric_of_squares_gray.png');
+// $plainBack: url('../images/background/nice_snow/nice_snow.png');
+// $plainBack: url('../images/background/witewall_3/witewall_3.png');
+
+// $plainBack: url('../images/background/greyzz/greyzz.png');
+// $plainBack: url('../images/background/light_grey/light_grey.png');
+$plainBack: url('../images/background/paper_fibers/paper_fibers.png');
+// $plainBack: url('../images/background/subtle_grunge/subtle_grunge.png');
+
 
 
 body,
@@ -176,7 +186,7 @@ LOGO
 			position: absolute;
 			right: 15.5%;
 			text-align: left;
-			background-color: $plainBack;
+			background: $plainBack;
 			border-left: 1px solid $font;
 			padding: 10% 0 7% 4%;
 			width: 52%;
@@ -234,7 +244,7 @@ JUMBOTRON
 */
 
 header {
-	background-color: $plainBack;
+	background: $plainBack;
 	height: 115%;
 	// min-height: 600px;
 	width: auto;
@@ -255,7 +265,7 @@ header {
 
 .header-text {
 	clear: both;
-	margin: 7% auto;
+	margin: 7% auto 5% auto;
 	text-align: center;
 
 	.brief {
@@ -269,6 +279,7 @@ header {
 } // End .header-text
 
 nav {
+	padding: 2.5% 0;
 	margin: 0 auto;
 	width: 100%;
 	
@@ -284,13 +295,40 @@ nav {
 			display: inline;
 			font-size: 16px;
 			font-weight: 400;
-			padding: 1% 1%;
-			margin: 0 4%;
-			// border-right: 1px solid $font;
+			// padding: 1% 2%;
 
-			&:last-child {
-				border: none;
+			// padding: 0.5% 0;
+			// margin: 0 4%;
+			padding: 1.5% 4%;
+			margin: 0 1px;
+			width: 19%;
+
+			background: $font;
+			// border-radius: 5px;
+			border: 1px solid $font;
+			// border-bottom: 1px solid $font;
+			transition: all 0.5s;
+
+			// &:last-child {
+			// 	// border: none;
+			// }
+
+			a {
+				color: #fff;
+				padding: 0 2%;
+				transition: all 0.5s;
 			}
+
+			&:hover {
+				background: none;
+				border: 1px solid $font;
+				// border-bottom: 1px solid $font;
+
+				a {
+					color: $font;
+				}
+			}
+
 		} // End li
 	} // End ul
 } // End nav
@@ -347,7 +385,7 @@ CONTENT
 }
 
 .content {
-	background-color: $plainBack;
+	background: $plainBack;
 	// margin: 40px auto 0 auto;
 	// width: 75%;
 	// box-shadow: 5px 5px 5px $font;
@@ -356,15 +394,21 @@ CONTENT
 
 /* ========= Portfolio Card ========= */
 
+.portfolio {
+	padding: 4% 5%;
+}
+
 .skills	{
-	padding-top: 22px;
-	margin: 0 auto;
+	// padding-top: 22px;
+	margin: 2.5% auto;
+	width: 100%;
 }
 
 .skills ul {
 	// color: $plainBack;
-	
 	// font-size: 20px;
+	width: 90%;
+	margin: 0 auto;t
 	font-size: 0;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
@@ -374,9 +418,9 @@ CONTENT
 .skills li {
 	display: inline;
 	// background-color: $font;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 400;
-	padding: 7px 4%;
+	padding: 1% 4%;
 	// border-radius: 2px;
 	border-right: 1px solid $font;
 	// margin: 0 10px;
@@ -389,7 +433,9 @@ CONTENT
 } // End .header-text li
 
 
-/* ========= Card 1 ========= */
+
+
+/* ========= About Card ========= */
 
 .content1 {
 	// min-width: 850px;
@@ -410,7 +456,7 @@ CONTENT
 .about {
 	float: left;
 	width: 80%;
-	background-color: $plainBack;
+	background: $plainBack;
 	border-left: 1px solid $font;	
 	padding: 15px 0 15px 20px;
 }
@@ -468,9 +514,9 @@ CONTENT
 			width: 79%;
 			height: auto;
 			padding: 3% 0 3% 5%;
-			background-color: $plainBack;
+			background: $plainBack;
 			// margin: 4% 0;
-			border-left: 2px solid $font;
+			border-left: 1px solid $font;
 			vertical-align: middle;
 			position: relative;
 			right: 7.5%;

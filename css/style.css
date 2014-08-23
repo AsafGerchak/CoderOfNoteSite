@@ -264,7 +264,7 @@ LOGO
     position: absolute;
     right: 15.5%;
     text-align: left;
-    background-color: white;
+    background: url("../images/background/paper_fibers/paper_fibers.png");
     border-left: 1px solid #604d49;
     padding: 10% 0 7% 4%;
     width: 52%;
@@ -304,7 +304,7 @@ JUMBOTRON
 =============================
 */
 header {
-  background-color: white;
+  background: url("../images/background/paper_fibers/paper_fibers.png");
   height: 115%;
   width: auto; }
 
@@ -319,7 +319,7 @@ header {
 
 .header-text {
   clear: both;
-  margin: 7% auto;
+  margin: 7% auto 5% auto;
   text-align: center; }
   .header-text .brief {
     width: 55%;
@@ -328,6 +328,7 @@ header {
       margin-bottom: 2.5%; }
 
 nav {
+  padding: 2.5% 0;
   margin: 0 auto;
   width: 100%; }
   nav ul {
@@ -341,10 +342,23 @@ nav {
       display: inline;
       font-size: 16px;
       font-weight: 400;
-      padding: 1% 1%;
-      margin: 0 4%; }
-      nav ul li:last-child {
-        border: none; }
+      padding: 1.5% 4%;
+      margin: 0 1px;
+      width: 19%;
+      background: #604d49;
+      border: 1px solid #604d49;
+      -webkit-transition: all 0.5s;
+              transition: all 0.5s; }
+      nav ul li a {
+        color: #fff;
+        padding: 0 2%;
+        -webkit-transition: all 0.5s;
+                transition: all 0.5s; }
+      nav ul li:hover {
+        background: none;
+        border: 1px solid #604d49; }
+        nav ul li:hover a {
+          color: #604d49; }
 
 .fa-angle-double-down {
   font-size: 60px;
@@ -365,28 +379,33 @@ CONTENT
   margin: 40px auto 0 auto; }
 
 .content {
-  background-color: white; }
+  background: url("../images/background/paper_fibers/paper_fibers.png"); }
 
 /* ========= Portfolio Card ========= */
+.portfolio {
+  padding: 4% 5%; }
+
 .skills {
-  padding-top: 22px;
-  margin: 0 auto; }
+  margin: 2.5% auto;
+  width: 100%; }
 
 .skills ul {
+  width: 90%;
+  margin: 0 auto;
   font-size: 0;
   text-transform: uppercase;
   letter-spacing: 1.5px; }
 
 .skills li {
   display: inline;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
-  padding: 7px 4%;
+  padding: 1% 4%;
   border-right: 1px solid #604d49; }
   .skills li:last-child {
     border: none; }
 
-/* ========= Card 1 ========= */
+/* ========= About Card ========= */
 .content1 {
   padding: 50px 55px; }
 
@@ -401,7 +420,7 @@ CONTENT
 .about {
   float: left;
   width: 80%;
-  background-color: white;
+  background: url("../images/background/paper_fibers/paper_fibers.png");
   border-left: 1px solid #604d49;
   padding: 15px 0 15px 20px; }
 
@@ -435,8 +454,8 @@ CONTENT
       width: 79%;
       height: auto;
       padding: 3% 0 3% 5%;
-      background-color: white;
-      border-left: 2px solid #604d49;
+      background: url("../images/background/paper_fibers/paper_fibers.png");
+      border-left: 1px solid #604d49;
       vertical-align: middle;
       position: relative;
       right: 7.5%;
