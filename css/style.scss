@@ -98,6 +98,14 @@ h3 {
 	line-height: 1.5;	
 }
 
+h4 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+}
+
 h5 {
 	font-weight: 700;
 	font-size: 18px;
@@ -395,6 +403,7 @@ CONTENT
 /* ========= Portfolio Card ========= */
 
 .portfolio {
+	width: 100%;
 	padding: 4% 5%;
 }
 
@@ -408,7 +417,7 @@ CONTENT
 	// color: $plainBack;
 	// font-size: 20px;
 	width: 90%;
-	margin: 0 auto;t
+	margin: 0 auto;
 	font-size: 0;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
@@ -430,8 +439,40 @@ CONTENT
 		&:last-child {
 			border: none;
 		}
-} // End .header-text li
+} // End .skills li
 
+
+// The portfolio pieces:
+
+.portfolioPieces {
+	width: 100%;
+	height: auto;
+
+	.piece {
+		float: left;
+		width: 33.33%;
+		padding: 7.5% 3% 4.5% 3%;
+		overflow: hidden;
+		transition: padding 0.45s;
+
+		h4, h1 {
+			opacity: 0;
+			transition: opacity 0.45s;
+		}
+
+		h4 {
+			margin-bottom: 4%;
+		}
+
+		&:hover {
+			padding: 6% 3%;
+			
+			h4, h1 {
+				opacity: 1;
+			}
+		}
+	} // End .piece
+} // End .portfolioPieces
 
 
 

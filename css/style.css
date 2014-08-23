@@ -200,6 +200,13 @@ h3 {
   font-size: 22px;
   line-height: 1.5; }
 
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.2px;
+  text-transform: uppercase; }
+
 h5 {
   font-weight: 700;
   font-size: 18px;
@@ -383,6 +390,7 @@ CONTENT
 
 /* ========= Portfolio Card ========= */
 .portfolio {
+  width: 100%;
   padding: 4% 5%; }
 
 .skills {
@@ -404,6 +412,27 @@ CONTENT
   border-right: 1px solid #604d49; }
   .skills li:last-child {
     border: none; }
+
+.portfolioPieces {
+  width: 100%;
+  height: auto; }
+  .portfolioPieces .piece {
+    float: left;
+    width: 33.33%;
+    padding: 7.5% 3% 4.5% 3%;
+    overflow: hidden;
+    -webkit-transition: padding 0.45s;
+            transition: padding 0.45s; }
+    .portfolioPieces .piece h4, .portfolioPieces .piece h1 {
+      opacity: 0;
+      -webkit-transition: opacity 0.45s;
+              transition: opacity 0.45s; }
+    .portfolioPieces .piece h4 {
+      margin-bottom: 4%; }
+    .portfolioPieces .piece:hover {
+      padding: 6% 3%; }
+      .portfolioPieces .piece:hover h4, .portfolioPieces .piece:hover h1 {
+        opacity: 1; }
 
 /* ========= About Card ========= */
 .content1 {
