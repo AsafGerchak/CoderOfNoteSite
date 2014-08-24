@@ -24,6 +24,7 @@ GENERAL STYLES
 
 /* === Sass Variables === */
 $font: #604d49;
+$fontDarker: #352a27;
 $fontTransparent: rgba(96, 77, 73, 0.65);
 $fontNegative: #eae6e6;
 $linkHover: #68c2c3;
@@ -222,29 +223,29 @@ LOGO
 
 /* --Footer Logo-- */
 
-.logo-small {
-	width: 315px;
-	padding-top: 3%;
-}
+// .logo-small {
+// 	width: 315px;
+// 	padding-top: 3%;
+// }
 
-.logo-small .logo-image {
-	padding-top: 6px;
-	margin-right: -6px;
-}
+// .logo-small .logo-image {
+// 	padding-top: 6px;
+// 	margin-right: -6px;
+// }
 
-.logo-small .logo-text {
-	padding: 44px 0 44px 8px;
-}
+// .logo-small .logo-text {
+// 	padding: 44px 0 44px 8px;
+// }
 
-.logo-small h1 {
-	font-size: 38px;
-	letter-spacing: 1.5px;
-}
+// .logo-small h1 {
+// 	font-size: 38px;
+// 	letter-spacing: 1.5px;
+// }
 
-.logo-small h2 {
-	font-size: 15px;
-	letter-spacing: 10px
-}
+// .logo-small h2 {
+// 	font-size: 15px;
+// 	letter-spacing: 10px
+// }
 
 
 /*
@@ -773,7 +774,7 @@ CONTENT
 				}
 				
 				h5 {
-					color: #fff;
+					color: $fontDarker;
 					right: 0;
 				}
 			} // End .social:hover
@@ -845,21 +846,53 @@ footer {
 	width: 100%;
 	margin-top: 7%;
 	margin-bottom: 10%;
-	height: 30%;
+	// height: 30%;
 	// box-shadow: 0 5px 5px $font;
+
+	.container {
+		padding: 4% 0;
+	}
 }
 
 .logo-small {
 	float: left;
-	width: 35%;
-	min-width: 350px;
-}
+	width: 50%;
+	// min-width: 350px;
+
+	.logoLetterSmall,
+	.logoWordmarkSmall {
+		display: inline-block;
+		fill: $font;
+		vertical-align: middle;
+	}
+
+	.logoLetterSmall {
+		width: 22%;
+	}
+
+	.logoWordmarkSmall {
+		width: 55%;
+		padding: 8% 0 6% 4%;
+		border-left: 1px solid $font;
+		background: $plainBack;
+		position: relative;
+		right: 5.85%;
+		transition: all 0.6s;
+	}
+
+	&:hover {
+		
+		.logoWordmarkSmall {
+			right: -2.5%;
+		}
+	} // End .logo-small:hover
+} // End .logo-small
 
 .copyright {
 	float: right;
 	text-align: right;
-	width: 42%;
-	margin-top: 75px;
+	width: 50%;
+	// margin-top: 75px;
 }
 
 .copyright a {

@@ -283,25 +283,6 @@ LOGO
     right: 8%; }
 
 /* --Footer Logo-- */
-.logo-small {
-  width: 315px;
-  padding-top: 3%; }
-
-.logo-small .logo-image {
-  padding-top: 6px;
-  margin-right: -6px; }
-
-.logo-small .logo-text {
-  padding: 44px 0 44px 8px; }
-
-.logo-small h1 {
-  font-size: 38px;
-  letter-spacing: 1.5px; }
-
-.logo-small h2 {
-  font-size: 15px;
-  letter-spacing: 10px; }
-
 /*
 =============================
 JUMBOTRON
@@ -600,7 +581,7 @@ CONTENT
         position: relative;
         right: 7%; }
       .contact .socialLinks .social:hover h5 {
-        color: #fff;
+        color: #352a27;
         right: 0; }
 
 /* 
@@ -618,19 +599,36 @@ footer {
   background: url("../images/background/greyzz/greyzz.png");
   width: 100%;
   margin-top: 7%;
-  margin-bottom: 10%;
-  height: 30%; }
+  margin-bottom: 10%; }
+  footer .container {
+    padding: 4% 0; }
 
 .logo-small {
   float: left;
-  width: 35%;
-  min-width: 350px; }
+  width: 50%; }
+  .logo-small .logoLetterSmall,
+  .logo-small .logoWordmarkSmall {
+    display: inline-block;
+    fill: #604d49;
+    vertical-align: middle; }
+  .logo-small .logoLetterSmall {
+    width: 22%; }
+  .logo-small .logoWordmarkSmall {
+    width: 55%;
+    padding: 8% 0 6% 4%;
+    border-left: 1px solid #604d49;
+    background: url("../images/background/greyzz/greyzz.png");
+    position: relative;
+    right: 5.85%;
+    -webkit-transition: all 0.6s;
+            transition: all 0.6s; }
+  .logo-small:hover .logoWordmarkSmall {
+    right: -2.5%; }
 
 .copyright {
   float: right;
   text-align: right;
-  width: 42%;
-  margin-top: 75px; }
+  width: 50%; }
 
 .copyright a {
   color: #c1a39d; }
