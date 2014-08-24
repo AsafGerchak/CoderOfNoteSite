@@ -271,7 +271,7 @@ LOGO
     position: absolute;
     right: 15.5%;
     text-align: left;
-    background: url("../images/background/paper_fibers/paper_fibers.png");
+    background: url("../images/background/greyzz/greyzz.png");
     border-left: 1px solid #604d49;
     padding: 10% 0 7% 4%;
     width: 52%;
@@ -311,7 +311,7 @@ JUMBOTRON
 =============================
 */
 header {
-  background: url("../images/background/paper_fibers/paper_fibers.png");
+  background: url("../images/background/greyzz/greyzz.png");
   height: 115%;
   width: auto; }
 
@@ -357,7 +357,7 @@ nav {
       -webkit-transition: all 0.5s;
               transition: all 0.5s; }
       nav ul li a {
-        color: #fff;
+        color: #eae6e6;
         padding: 0 2%;
         -webkit-transition: all 0.5s;
                 transition: all 0.5s; }
@@ -386,7 +386,7 @@ CONTENT
   margin: 40px auto 0 auto; }
 
 .content {
-  background: url("../images/background/paper_fibers/paper_fibers.png"); }
+  background: url("../images/background/greyzz/greyzz.png"); }
 
 /* ========= Portfolio Card ========= */
 .portfolio {
@@ -415,24 +415,52 @@ CONTENT
 
 .portfolioPieces {
   width: 100%;
+  margin-top: 4%;
   height: auto; }
+  .portfolioPieces h3 {
+    margin-bottom: 3%; }
   .portfolioPieces .piece {
     float: left;
     width: 33.33%;
-    padding: 7.5% 3% 4.5% 3%;
+    height: 300px;
     overflow: hidden;
-    -webkit-transition: padding 0.45s;
-            transition: padding 0.45s; }
-    .portfolioPieces .piece h4, .portfolioPieces .piece h1 {
-      opacity: 0;
-      -webkit-transition: opacity 0.45s;
-              transition: opacity 0.45s; }
-    .portfolioPieces .piece h4 {
-      margin-bottom: 4%; }
+    -webkit-transition: background-size 0.15s linear;
+            transition: background-size 0.15s linear; }
+    .portfolioPieces .piece .pieceCaption {
+      width: 100%;
+      height: 100%;
+      padding: 40% 5% 20% 5%;
+      background: none;
+      -webkit-transition: padding 0.15s linear, background 0.15s linear;
+              transition: padding 0.15s linear, background 0.15s linear; }
+      .portfolioPieces .piece .pieceCaption h4, .portfolioPieces .piece .pieceCaption h1 {
+        color: #fff;
+        opacity: 0;
+        -webkit-transition: opacity 0.15s;
+                transition: opacity 0.15s; }
+      .portfolioPieces .piece .pieceCaption h4 {
+        padding-bottom: 3.5%;
+        margin-bottom: 3.5%;
+        border-bottom: 1px solid #fff; }
+      .portfolioPieces .piece .pieceCaption .detail {
+        font-style: italic;
+        margin-top: 1%; }
     .portfolioPieces .piece:hover {
-      padding: 6% 3%; }
-      .portfolioPieces .piece:hover h4, .portfolioPieces .piece:hover h1 {
-        opacity: 1; }
+      background-size: auto 113%; }
+      .portfolioPieces .piece:hover .pieceCaption {
+        padding: 33% 5% 27% 5%;
+        background: rgba(96, 77, 73, 0.65); }
+        .portfolioPieces .piece:hover .pieceCaption h4, .portfolioPieces .piece:hover .pieceCaption h1 {
+          opacity: 1; }
+  .portfolioPieces .piece1 {
+    background: url("../images/portfolioImages/hipster_barista.jpg") center center no-repeat;
+    background-size: auto 100%; }
+  .portfolioPieces .piece2 {
+    background: url("../images/portfolioImages/euniceArt.png") center center no-repeat;
+    background-size: auto 100%; }
+  .portfolioPieces .piece3 {
+    background: url("../images/portfolioImages/heather.jpg") center center no-repeat;
+    background-size: auto 100%; }
 
 /* ========= About Card ========= */
 .content1 {
@@ -449,7 +477,7 @@ CONTENT
 .about {
   float: left;
   width: 80%;
-  background: url("../images/background/paper_fibers/paper_fibers.png");
+  background: url("../images/background/greyzz/greyzz.png");
   border-left: 1px solid #604d49;
   padding: 15px 0 15px 20px; }
 
@@ -483,7 +511,7 @@ CONTENT
       width: 79%;
       height: auto;
       padding: 3% 0 3% 5%;
-      background: url("../images/background/paper_fibers/paper_fibers.png");
+      background: url("../images/background/greyzz/greyzz.png");
       border-left: 1px solid #604d49;
       vertical-align: middle;
       position: relative;

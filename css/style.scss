@@ -24,6 +24,8 @@ GENERAL STYLES
 
 /* === Sass Variables === */
 $font: #604d49;
+$fontTransparent: rgba(96, 77, 73, 0.65);
+$fontNegative: #eae6e6;
 $linkHover: #68c2c3;
 // $plainBack: #fbfbed;
 // $plainBack: #f3f3e3;
@@ -33,9 +35,9 @@ $linkHover: #68c2c3;
 // $plainBack: url('../images/background/nice_snow/nice_snow.png');
 // $plainBack: url('../images/background/witewall_3/witewall_3.png');
 
-// $plainBack: url('../images/background/greyzz/greyzz.png');
+$plainBack: url('../images/background/greyzz/greyzz.png');
 // $plainBack: url('../images/background/light_grey/light_grey.png');
-$plainBack: url('../images/background/paper_fibers/paper_fibers.png');
+// $plainBack: url('../images/background/paper_fibers/paper_fibers.png');
 // $plainBack: url('../images/background/subtle_grunge/subtle_grunge.png');
 
 
@@ -322,7 +324,7 @@ nav {
 			// }
 
 			a {
-				color: #fff;
+				color: $fontNegative;
 				padding: 0 2%;
 				transition: all 0.5s;
 			}
@@ -446,32 +448,73 @@ CONTENT
 
 .portfolioPieces {
 	width: 100%;
+	margin-top: 4%;
 	height: auto;
+
+	h3 {
+		margin-bottom: 3%;
+	}
 
 	.piece {
 		float: left;
 		width: 33.33%;
-		padding: 7.5% 3% 4.5% 3%;
+		height: 300px;
 		overflow: hidden;
-		transition: padding 0.45s;
+		transition: background-size 0.15s linear;
 
-		h4, h1 {
-			opacity: 0;
-			transition: opacity 0.45s;
-		}
+		.pieceCaption {
+			width: 100%;
+			height: 100%;
+			padding: 40% 5% 20% 5%;
+			background: none;
+			transition: padding 0.15s linear, background 0.15s linear;
 
-		h4 {
-			margin-bottom: 4%;
-		}
+			h4, h1 {
+				color: #fff;
+				opacity: 0;
+				transition: opacity 0.15s;
+			}
+
+			h4 {
+				padding-bottom: 3.5%;
+				margin-bottom: 3.5%;
+				border-bottom: 1px solid #fff;
+			}
+
+			.detail {
+				font-style: italic;
+				margin-top: 1%;
+			}
+		} // End .pieceCaption
 
 		&:hover {
-			padding: 6% 3%;
-			
-			h4, h1 {
-				opacity: 1;
-			}
-		}
+			background-size: auto 113%;
+
+			.pieceCaption {
+				padding: 33% 5% 27% 5%;
+				background: $fontTransparent;
+				
+				h4, h1 {
+					opacity: 1;
+				}
+			} // End .piece:hover .pieceCaption
+		}// End .pieceCaption: hover
 	} // End .piece
+
+	.piece1 {
+		background: url('../images/portfolioImages/hipster_barista.jpg') center center no-repeat;
+		background-size: auto 100%;
+	}
+
+	.piece2 {
+		background: url('../images/portfolioImages/euniceArt.png') center center no-repeat;
+		background-size: auto 100%;
+	}
+
+	.piece3 {
+		background: url('../images/portfolioImages/heather.jpg') center center no-repeat;
+		background-size: auto 100%;
+	}
 } // End .portfolioPieces
 
 
