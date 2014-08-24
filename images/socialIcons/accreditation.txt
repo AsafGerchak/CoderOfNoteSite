@@ -1,0 +1,8 @@
+TWITTER
+<div>Icon made by Stephen Hutchings from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div>
+
+GITHUB
+<div>Icon made by SimpleIcon from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div>
+
+EMAIL
+<div>Icon made by <a href="http://www.freepik.com" alt="Freepik.com" title="Freepik.com">Freepik</a> from <a href="http://www.flaticon.com/free-icon/e-mail-envelope-ios-7-interface-symbol_20520" title="Flaticon">www.flaticon.com</a></div>

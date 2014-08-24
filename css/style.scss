@@ -109,8 +109,8 @@ h4 {
 }
 
 h5 {
-	font-weight: 700;
-	font-size: 18px;
+	font-weight: 400;
+	font-size: 20px;
 	letter-spacing: 1.5px;
 	line-height: 1;
 }
@@ -138,7 +138,7 @@ a {
 }
 
 a:hover {
-	color: $linkHover
+	// color: $linkHover
 }
 
 
@@ -729,6 +729,57 @@ CONTENT
 } // End .answers
 
 
+/* ========= Contact ========= */
+
+.contact {
+	padding: 4% 5% 5% 5%;
+
+	.socialLinks {
+		margin-top: 4%;
+		padding-left: 2%;
+		
+		.social {
+			float: left;
+			width: 32%;
+
+			.socialIcon,
+			h5 {
+				display: inline-block;
+				vertical-align: middle;
+				transition: all 0.6s;
+			}
+
+			.socialIcon {
+				width: 19%;
+				fill: $font;
+				background: none;
+				transition: all 0.6s;
+			}
+
+			h5 {
+				width: 70%;
+				padding: 5% 0 5% 4%;
+				border-left: 1px solid $font;
+				background: $plainBack;
+				position: relative;
+				right: 7%;
+			}
+
+			&:hover {
+
+				.socialIcon {
+					// fill: #fff;
+					// background: $font;
+				}
+				
+				h5 {
+					color: #fff;
+					right: 0;
+				}
+			} // End .social:hover
+		} // End .social
+	} // End .socialLinks
+} // End .contact
 
 
 // dt {
