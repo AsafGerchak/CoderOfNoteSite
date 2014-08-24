@@ -391,7 +391,7 @@ CONTENT
 	width: 80%;
 	max-width: 1500px;
 	// min-width: 850px;
-	margin: 40px auto 0 auto;
+	margin: 3% auto 0 auto;
 }
 
 .content {
@@ -522,7 +522,7 @@ CONTENT
 			height: 100%;
 			padding: 40% 5% 20% 5%;
 			// background: none;
-			background: rgba(96, 77, 73, 0.3);
+			background: rgba(96, 77, 73, 0.35);
 			transition: padding 0.15s linear, background 0.15s linear;
 
 			h4, h1 {
@@ -579,7 +579,7 @@ CONTENT
 
 .content1 {
 	// min-width: 850px;
-	padding: 50px 55px;
+	padding: 4.5% 4.5%;
 	// mask-image: url("../images/mask/mask02.png");
 	// mask-position: 0 0;
 }
@@ -587,25 +587,29 @@ CONTENT
 #headshot {
 	border-radius: 50%;
 	float: left;
-	width: 20%;
-	min-width: 160px;
-	margin-right: -34px;
-	margin-top: 30px;
+	width: 25%;
+	height: auto;
+	margin-top: 3.5%;
+	// min-width: 160px;
+	// margin-right: -34px;
+	// margin-top: 30px;
 }
 
 .about {
 	float: left;
-	width: 80%;
+	width: 75%;
 	background: $plainBack;
 	border-left: 1px solid $font;	
-	padding: 15px 0 15px 20px;
+	padding: 1.5% 0 1.5% 4%;
+	position: relative;
+	right: 3.5%;
 }
 
 
 /* ========= FAQ Questions Card ========= */
 
 .faq {
-	margin-bottom: 7%;
+	// margin-bottom: 7%;
 }
 
 .questions {
@@ -786,10 +790,11 @@ FOOTER
 
 footer {
 	clear: both;
-	background-color: white;
+	background: $plainBack;
 	width: 100%;
-	margin-bottom: 50px;
-	height: 200px;
+	margin-top: 7%;
+	margin-bottom: 10%;
+	height: 30%;
 	// box-shadow: 0 5px 5px $font;
 }
 

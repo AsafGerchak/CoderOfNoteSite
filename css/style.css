@@ -383,7 +383,7 @@ CONTENT
 .wrapper {
   width: 80%;
   max-width: 1500px;
-  margin: 40px auto 0 auto; }
+  margin: 3% auto 0 auto; }
 
 .content {
   background: url("../images/background/greyzz/greyzz.png"); }
@@ -462,7 +462,7 @@ CONTENT
       width: 100%;
       height: 100%;
       padding: 40% 5% 20% 5%;
-      background: rgba(96, 77, 73, 0.3);
+      background: rgba(96, 77, 73, 0.35);
       -webkit-transition: padding 0.15s linear, background 0.15s linear;
               transition: padding 0.15s linear, background 0.15s linear; }
       .portfolioPieces .piece .pieceCaption h4, .portfolioPieces .piece .pieceCaption h1 {
@@ -496,27 +496,25 @@ CONTENT
 
 /* ========= About Card ========= */
 .content1 {
-  padding: 50px 55px; }
+  padding: 4.5% 4.5%; }
 
 #headshot {
   border-radius: 50%;
   float: left;
-  width: 20%;
-  min-width: 160px;
-  margin-right: -34px;
-  margin-top: 30px; }
+  width: 25%;
+  height: auto;
+  margin-top: 3.5%; }
 
 .about {
   float: left;
-  width: 80%;
+  width: 75%;
   background: url("../images/background/greyzz/greyzz.png");
   border-left: 1px solid #604d49;
-  padding: 15px 0 15px 20px; }
+  padding: 1.5% 0 1.5% 4%;
+  position: relative;
+  right: 3.5%; }
 
 /* ========= FAQ Questions Card ========= */
-.faq {
-  margin-bottom: 7%; }
-
 .questions {
   width: 40%;
   height: 100%;
@@ -588,10 +586,11 @@ FOOTER
 */
 footer {
   clear: both;
-  background-color: white;
+  background: url("../images/background/greyzz/greyzz.png");
   width: 100%;
-  margin-bottom: 50px;
-  height: 200px; }
+  margin-top: 7%;
+  margin-bottom: 10%;
+  height: 30%; }
 
 .logo-small {
   float: left;
