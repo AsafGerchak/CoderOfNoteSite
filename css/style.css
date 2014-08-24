@@ -406,12 +406,26 @@ CONTENT
 
 .skills li {
   display: inline;
-  font-size: 20px;
   font-weight: 400;
-  padding: 1% 4%;
-  border-right: 1px solid #604d49; }
-  .skills li:last-child {
-    border: none; }
+  border-left: 1px solid #604d49;
+  width: 25%; }
+  .skills li .skillsIcon,
+  .skills li h3 {
+    display: inline-block;
+    vertical-align: middle; }
+  .skills li .skillsIcon {
+    width: 8%;
+    fill: #604d49; }
+  .skills li h3 {
+    font-size: 18px;
+    padding: 2.5% 2%;
+    border-left: 1px solid #604d49;
+    background: url("../images/background/greyzz/greyzz.png");
+    position: relative;
+    right: 2.75%;
+    cursor: default; }
+  .skills li:hover h3 {
+    right: 0; }
 
 .portfolioPieces {
   width: 100%;

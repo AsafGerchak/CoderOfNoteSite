@@ -429,18 +429,48 @@ CONTENT
 .skills li {
 	display: inline;
 	// background-color: $font;
-	font-size: 20px;
+	// font-size: 20px;
 	font-weight: 400;
-	padding: 1% 4%;
+	// padding: 3% 4%;
 	// border-radius: 2px;
-	border-right: 1px solid $font;
+	border-left: 1px solid $font;
+	width: 25%;
 	// margin: 0 10px;
 	// margin: 0 1%;
 	// padding: 7px 20px;
 		
-		&:last-child {
-			border: none;
+	// &:last-child {
+	// 	border: none;
+	// }
+	
+	.skillsIcon,
+	h3 {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.skillsIcon {
+		// height: 200px;
+		width: 8%;
+		fill: $font;
+	}
+
+	h3 {
+		font-size: 18px;
+		padding: 2.5% 2%;
+		border-left: 1px solid $font;
+		background: $plainBack;
+		position: relative;
+		right: 2.75%;
+		cursor: default;
+	}
+
+	&:hover {
+		
+		h3 {
+			right: 0;
 		}
+	}
 } // End .skills li
 
 
