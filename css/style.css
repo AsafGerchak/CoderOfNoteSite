@@ -394,15 +394,19 @@ CONTENT
   padding: 4% 5%; }
 
 .skills {
-  margin: 2.5% auto;
+  margin: 3.5% auto 8% auto;
   width: 100%; }
 
 .skills ul {
-  width: 90%;
-  margin: 0 5% 4% 5%;
+  width: 80%;
   font-size: 0;
   text-transform: uppercase;
   letter-spacing: 1.5px; }
+  .skills ul:last-child {
+    text-align: right; }
+
+.skillsOne {
+  margin: 0 0 4% 20%; }
 
 .skills li {
   display: inline;
@@ -416,7 +420,7 @@ CONTENT
     display: inline-block;
     vertical-align: middle; }
   .skills li .skillsIcon {
-    width: 8%;
+    width: 9%;
     fill: #604d49; }
   .skills li #responsive {
     -webkit-transform: scaleX(-1);
@@ -432,12 +436,14 @@ CONTENT
     border-left: 1px solid #604d49;
     background: url("../images/background/greyzz/greyzz.png");
     position: relative;
-    right: 2.5%;
+    right: 2.85%;
     cursor: default;
     -webkit-transition: all 0.6s;
             transition: all 0.6s; }
   .skills li:hover h3 {
-    right: 0; }
+    right: -2%; }
+  .skills li:hover .html {
+    right: -0.75%; }
 
 .portfolioPieces {
   width: 100%;
