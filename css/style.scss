@@ -24,7 +24,7 @@ GENERAL STYLES
 
 /* === Sass Variables === */
 $font: #604d49;
-$fontDarker: #352a27;
+$fontDarker: #251916;
 $fontTransparent: rgba(96, 77, 73, 0.65);
 $fontNegative: #eae6e6;
 $linkHover: #68c2c3;
@@ -850,12 +850,14 @@ footer {
 	// box-shadow: 0 5px 5px $font;
 
 	.container {
-		padding: 4% 0;
+		padding: 4% 0 5% 0;
 	}
 }
 
 .logo-small {
-	float: left;
+	// float: left;
+	display: inline-block;
+	vertical-align: middle;
 	width: 50%;
 	// min-width: 350px;
 
@@ -889,14 +891,16 @@ footer {
 } // End .logo-small
 
 .copyright {
-	float: right;
+	// float: right;
+	display: inline-block;
+	vertical-align: middle;
 	text-align: right;
-	width: 50%;
-	// margin-top: 75px;
+	width: 49.5%;
+	margin-top: 1%;
 }
 
 .copyright a {
-color: #c1a39d;
+color: $fontDarker;
 }
 
 .copyright a:hover {

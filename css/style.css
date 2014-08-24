@@ -581,7 +581,7 @@ CONTENT
         position: relative;
         right: 7%; }
       .contact .socialLinks .social:hover h5 {
-        color: #352a27;
+        color: #251916;
         right: 0; }
 
 /* 
@@ -601,10 +601,11 @@ footer {
   margin-top: 7%;
   margin-bottom: 10%; }
   footer .container {
-    padding: 4% 0; }
+    padding: 4% 0 5% 0; }
 
 .logo-small {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
   width: 50%; }
   .logo-small .logoLetterSmall,
   .logo-small .logoWordmarkSmall {
@@ -626,12 +627,14 @@ footer {
     right: -2.5%; }
 
 .copyright {
-  float: right;
+  display: inline-block;
+  vertical-align: middle;
   text-align: right;
-  width: 50%; }
+  width: 49.5%;
+  margin-top: 1%; }
 
 .copyright a {
-  color: #c1a39d; }
+  color: #251916; }
 
 .copyright a:hover {
   color: #68c2c3; }
