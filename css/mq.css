@@ -114,20 +114,3 @@
 @media (max-width: 705px) {
   .faq {
     display: none; } }
-@media (max-width: 680px) {
-  .banner {
-    width: 100%; }
-
-  .logo {
-    width: 110%; }
-    .logo .logoContent .logo-text {
-      right: 20.5%; }
-
-  .header-text {
-    margin: 15% auto 8% auto; }
-
-  nav {
-    display: none; }
-
-  .mobileNav {
-    display: block; } }

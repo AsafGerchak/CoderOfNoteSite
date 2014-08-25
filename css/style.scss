@@ -46,13 +46,13 @@ $plainBack: url('../images/background/greyzz/greyzz.png');
 body,
 html {
 	height: 100%;
+	overflow-x: hidden;
 }
 
 body {
 	color: $font;
 	font-family: 'Rosario', sans-serif;
 	font-weight: 400;
-	overflow-x: hidden;
 }
 
 
@@ -359,7 +359,7 @@ nav {
 	display: none;
 
 	h2 {
-		margin-top: 4%;
+		margin-top: 15%;
 		font-size: 30px;
 		font-weight: 700;
 		cursor: pointer;
@@ -368,21 +368,22 @@ nav {
 	.mobileMenu {
 		width: 100%;
 		position: absolute;
-		top: -600%;
+		top: -700%;
 		overflow: hidden;
 		}
 	
 	ul {
 		width: 100%;
 		margin: 0 auto;
+		padding: 3% 0;
 		font-size: 0;
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
 		background: $plainBack;
 		position: relative;
-		bottom: -180px;
-		transition: bottom 2.5s;
+		bottom: -300px;
+		transition: bottom 1.25s;
 
 		li {
 			display: block;
