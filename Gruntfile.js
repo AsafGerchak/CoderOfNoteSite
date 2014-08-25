@@ -10,7 +10,7 @@ module.exports = function(grunt) {
    		tasks: ['sass', 'autoprefixer', 'recess']
    	},
    	html: {
-   		files: 'index.html',
+   		files: ['index.html','portfolioPages/*.html'],
    		tasks: ['']
    	},
    	options: {

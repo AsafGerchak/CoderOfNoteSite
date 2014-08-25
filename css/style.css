@@ -216,8 +216,7 @@ h5 {
 h6 {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.2;
-  margin-bottom: 3px; }
+  line-height: 1.4; }
 
 p {
   font-size: 16px;
@@ -372,7 +371,7 @@ CONTENT
   padding: 4% 5% 7% 5%; }
 
 .skills {
-  margin: 3.5% auto 8% auto;
+  margin: 6% auto 7% auto;
   width: 100%; }
 
 .skills ul {
@@ -591,6 +590,38 @@ Big big BIG thanks to http://iconstoc.com for the sweet social media icon set!
 */
 /*
 =============================
+PORTFOLIO PAGE STYLES
+=============================
+*/
+/* ========= Smaller Header =========*/
+.header2 {
+  width: auto;
+  padding: 3% 0; }
+  .header2 .headerContainer {
+    width: 80%;
+    margin: 0 auto; }
+    .header2 .headerContainer .logo-small,
+    .header2 .headerContainer h2 {
+      display: inline-block;
+      vertical-align: middle; }
+    .header2 .headerContainer h2 {
+      width: 49.5%;
+      text-align: right;
+      font-size: 40px;
+      font-weight: 400;
+      margin-bottom: 0; }
+
+/* ========= Individual Portfolio Piece =========*/
+.pieceDisplay {
+  padding: 4% 5%; }
+  .pieceDisplay .pieceImage {
+    width: 80%;
+    margin: 5% auto; }
+    .pieceDisplay .pieceImage img {
+      width: 100%; }
+
+/*
+=============================
 FOOTER
 =============================
 */
@@ -630,8 +661,7 @@ footer {
   display: inline-block;
   vertical-align: middle;
   text-align: right;
-  width: 49.5%;
-  margin-top: 1%; }
+  width: 49.5%; }
 
 .copyright a {
   color: #251916; }
