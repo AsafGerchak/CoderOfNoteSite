@@ -18,6 +18,11 @@ $(function(){
     }
   });
 
+  //MOBILE NAV
+
+  $('#navToggle').on('click', function(){
+  	$('#mobileMenu ul').toggleClass('showNav');
+  });
   
   //FAQ BUTTONS
 
