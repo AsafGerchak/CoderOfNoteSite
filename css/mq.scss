@@ -8,13 +8,14 @@
 	}
 }
 
+
 @media (max-width: 1000px) {
 	h1 {
 		font-size: 17px;
 	}
 
 	h2 {
-		font-size: 27px;
+		font-size: 24px;
 	}
 
 	h3 {
@@ -73,8 +74,8 @@
 		}
 
 		.piece3 {
-			float: none;
-			margin: 0 auto;
+			// float: none;
+			// margin: 0 auto;
 		}
 	} // End .portfolioPieces
 
@@ -93,3 +94,110 @@
 		}
 	}
 } // End max-width 1000px
+
+
+@media (max-width: 850px) {
+	h3 {
+		font-size: 18px;
+	}
+
+	h6 {
+		font-size: 11px;
+	}
+
+	.logo {
+		width: 100%;
+		padding-top: 28%;
+
+		.logoContent .logo-text {
+			right: 19.75%;
+		}
+	}
+
+	.header-text {
+		margin: 12% auto;
+
+		.brief {
+			width: 98%;
+		}
+	}
+
+	.skills {
+		margin: 4% auto 6% auto;
+
+		ul {
+			width: 90%;
+		}
+
+		li h3 {
+			font-size: 16px;
+		}
+	} // End .skills
+
+	.skillsOne,
+	.skillsTwo {
+		// width: 100%;
+	}
+
+	.skillsOne {
+		margin-left: 4%;
+	}
+	
+	.content1 {
+		width: 100%;
+		padding: 6% 6%;
+	}
+
+	#headshot {
+		width: 40%;
+		margin: 3% 4% 1% 0;
+	}
+
+	.about {
+		float: none;
+		width: 100%;
+		border: none;
+		position: static;
+	}
+
+	.questions {
+		h2 {
+			font-size: 21px;
+		}
+
+		.qButton .ask {
+
+			h3 {
+				font-size: 17px;
+				line-height: 1.25;
+			}
+		} // End .qButton .ask
+	} // End .questions
+
+	.answers .ansCard {
+
+		h1 {
+			font-size: 15px;
+			line-height: 1.35;
+		}
+	} // End .answers .ansCard
+
+	.contact .socialLinks {
+		margin-top: 3%;
+
+		.social {
+			width: 50%;
+		}
+
+		.social3 {
+			margin-top: 2%;
+		}
+	}
+} // End max-width 850px
+
+
+@media (max-width: 705px) {
+	.faq {
+		display: none;
+	}
+}
