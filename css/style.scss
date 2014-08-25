@@ -844,7 +844,7 @@ PORTFOLIO PAGE STYLES
 
 .header2 {
 	width: auto;
-	padding: 3% 0;
+	padding: 3% 0 4.5% 0;
 
 	.headerContainer {
 		width: 80%;
@@ -870,7 +870,7 @@ PORTFOLIO PAGE STYLES
 /* ========= Individual Portfolio Piece =========*/
 
 .pieceDisplay {
-	padding: 4% 5%;
+	padding: 4% 5% 6% 5%;
 
 	.pieceImage {
 		width: 80%;
@@ -879,8 +879,47 @@ PORTFOLIO PAGE STYLES
 		img {
 			width: 100%;
 		}
-	}
-}
+	} // End .pieceImage
+
+	.caption {
+		width: 80%;
+		margin: 0 auto;
+
+		.pieceInfo {
+			float: left;
+			// width: 46.5%;
+			// padding: 0 3.5%;
+
+			h4 {
+				line-height: 1.5;
+				// font-size: 22px;
+			}
+		} // End .pieceInfo
+
+		.pieceInfoOne {
+			width: 46.5%;
+			margin-right: 3.5%;
+		}
+
+		.pieceInfoTwo {
+			width: 50%;
+			padding-left: 3.5%;
+			border-left: 1px solid $font;
+
+			h4 {
+				margin-top: 7%;
+
+				&:first-child {
+					margin-top: 1%;
+				}
+			}
+
+			h3 {
+				font-style: italic;
+			}
+		}
+	} // End .caption
+} // End .pieceDisplay
 
 
 /*
