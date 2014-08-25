@@ -46,7 +46,7 @@ $plainBack: url('../images/background/greyzz/greyzz.png');
 body,
 html {
 	height: 100%;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 }
 
 body {
@@ -168,6 +168,7 @@ LOGO
 /* --Header Logo-- */
 
 .logo {
+	clear: both;
 	margin: 0 auto;
 	// width: 500px;
 	width: 70%;
@@ -266,6 +267,17 @@ header {
 	width: 80%;
 	height: 80%;
 	margin: 0 auto;
+	position: relative;
+}
+
+.navToggle {
+	width: 10%;
+	fill: $font;
+	margin: 2% 2% 0 0;
+	// z-index: 9000;
+	float: right;
+	cursor: pointer;
+	display: none;
 }
 
 .container {
@@ -282,6 +294,8 @@ header {
 	.brief {
 		width: 55%;
 		margin: 0 auto;
+		opacity: 1;
+		transition: opacity 0.75s;
 
 		h3 {
 			margin-bottom: 2.5%;
@@ -289,6 +303,9 @@ header {
 	} // End .brief
 } // End .header-text
 
+.header-text .hideBrief {
+	opacity: 0;
+}
 
 /* ========= Nav ========= */
 
@@ -350,86 +367,99 @@ nav {
 
 /* ========= Mobile Nav ========= */
 
-.mobileNav {
+// .mobileNav {
 	// padding: 2.5% 0;
-	margin: 0 auto;
-	width: 100%;
-	text-align: center;
-	position: relative;
-	display: none;
+	// margin: 0 auto;
+	// width: 100%;
+	// text-align: center;
+	// position: relative;
+	// display: none;
 
-	h2 {
-		margin-top: 15%;
-		font-size: 30px;
-		font-weight: 700;
-		cursor: pointer;
-	}
+	// h2 {
+	// 	margin-top: 15%;
+	// 	font-size: 30px;
+	// 	font-weight: 700;
+	// 	cursor: pointer;
+	// }
 	
 	.mobileMenu {
 		width: 100%;
-		position: absolute;
-		top: -700%;
-		overflow: hidden;
-		}
-	
-	ul {
-		width: 100%;
-		margin: 0 auto;
-		padding: 3% 0;
-		font-size: 0;
 		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 1.5px;
-		background: $plainBack;
-		position: relative;
-		bottom: -300px;
-		transition: bottom 1.25s;
+		position: absolute;
+		display: none;
+		// top: -100%;
+		// top: -700%;
+		// overflow: hidden;
+		// display: none;
+	
+		ul {
+			width: 100%;
+			margin: 0 auto;
+			// padding: 3% 0;
+			font-size: 0;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			// background: $plainBack;
+			position: relative;
+			// bottom: -300px;
+			transition: bottom 1.25s;
 
-		li {
-			display: block;
-			font-size: 16px;
-			font-weight: 400;
-			// padding: 1% 2%;
+			li {
+				display: block;
+				font-size: 16px;
+				font-weight: 400;
+				// padding: 1% 2%;
 
-			// padding: 0.5% 0;
-			// margin: 0 4%;
-			padding: 1.5% 4%;
-			margin: 1px auto;
-			width: 40%;
+				// padding: 0.5% 0;
+				// margin: 0 4%;
+				padding: 1.5% 4%;
+				margin: 1px auto;
+				// width: 40%;
 
-			background: $font;
-			// border-radius: 5px;
-			border: 1px solid $font;
-			// border-bottom: 1px solid $font;
-			transition: all 0.5s;
-
-			// &:last-child {
-			// 	// border: none;
-			// }
-
-			a {
-				color: $fontNegative;
-				padding: 0 2%;
-				transition: all 0.5s;
-			}
-
-			&:hover {
-				background: none;
+				background: $font;
+				// border-radius: 5px;
 				border: 1px solid $font;
+				position: relative;
+				left: -110%;
 				// border-bottom: 1px solid $font;
+				transition: all 0.75s;
+
+				&:nth-child(1) {
+					transition: all 0.75s;
+				}
+
+				&:nth-child(2) {
+					transition: all 0.75s 0.2s;
+				}
+
+				&:nth-child(3) {
+					transition: all 0.75s 0.4s;
+				}
 
 				a {
-					color: $font;
+					color: $fontNegative;
+					padding: 0 2%;
+					transition: all 0.5s;
 				}
-			}
 
-		} // End li
-	} // End ul
+				&:hover {
+					background: none;
+					border: 1px solid $font;
+					// border-bottom: 1px solid $font;
 
-	.showNav {
-		bottom: 0;
-	}
-} // End .Mobilenav
+					a {
+						color: $font;
+					}
+				}
+
+			} // End li
+		} // End ul
+
+		.showNav {
+			left: 0;
+		}
+	} // End .mobileMenu
 
 
 

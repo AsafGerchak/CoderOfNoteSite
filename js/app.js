@@ -18,12 +18,13 @@ $(function(){
     }
   });
 
-  
+
 
   //MOBILE NAV
 
   $('#navToggle').on('click', function(){
-  	$('#mobileMenu ul').toggleClass('showNav');
+  	$('#mobileMenu ul li').toggleClass('showNav');
+  	$('#brief').toggleClass('hideBrief')
   });
   
   //FAQ BUTTONS

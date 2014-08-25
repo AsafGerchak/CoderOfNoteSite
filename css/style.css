@@ -164,8 +164,7 @@ td, th {
 /* === Sass Variables === */
 body,
 html {
-  height: 100%;
-  overflow-x: hidden; }
+  height: 100%; }
 
 body {
   color: #604d49;
@@ -245,6 +244,7 @@ LOGO
 */
 /* --Header Logo-- */
 .logo {
+  clear: both;
   margin: 0 auto;
   width: 70%;
   height: auto;
@@ -291,7 +291,16 @@ header {
 .banner {
   width: 80%;
   height: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+
+.navToggle {
+  width: 10%;
+  fill: #604d49;
+  margin: 2% 2% 0 0;
+  float: right;
+  cursor: pointer;
+  display: none; }
 
 .container {
   width: 100%;
@@ -303,9 +312,14 @@ header {
   text-align: center; }
   .header-text .brief {
     width: 55%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity 0.75s; }
     .header-text .brief h3 {
       margin-bottom: 2.5%; }
+
+.header-text .hideBrief {
+  opacity: 0; }
 
 /* ========= Nav ========= */
 nav {
@@ -340,55 +354,48 @@ nav {
           color: #604d49; }
 
 /* ========= Mobile Nav ========= */
-.mobileNav {
-  margin: 0 auto;
+.mobileMenu {
   width: 100%;
   text-align: center;
-  position: relative;
+  position: absolute;
   display: none; }
-  .mobileNav h2 {
-    margin-top: 15%;
-    font-size: 30px;
-    font-weight: 700;
-    cursor: pointer; }
-  .mobileNav .mobileMenu {
-    width: 100%;
-    position: absolute;
-    top: -700%;
-    overflow: hidden; }
-  .mobileNav ul {
+  .mobileMenu ul {
     width: 100%;
     margin: 0 auto;
-    padding: 3% 0;
     font-size: 0;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    background: url("../images/background/greyzz/greyzz.png");
     position: relative;
-    bottom: -300px;
     transition: bottom 1.25s; }
-    .mobileNav ul li {
+    .mobileMenu ul li {
       display: block;
       font-size: 16px;
       font-weight: 400;
       padding: 1.5% 4%;
       margin: 1px auto;
-      width: 40%;
       background: #604d49;
       border: 1px solid #604d49;
-      transition: all 0.5s; }
-      .mobileNav ul li a {
+      position: relative;
+      left: -110%;
+      transition: all 0.75s; }
+      .mobileMenu ul li:nth-child(1) {
+        transition: all 0.75s; }
+      .mobileMenu ul li:nth-child(2) {
+        transition: all 0.75s 0.2s; }
+      .mobileMenu ul li:nth-child(3) {
+        transition: all 0.75s 0.4s; }
+      .mobileMenu ul li a {
         color: #eae6e6;
         padding: 0 2%;
         transition: all 0.5s; }
-      .mobileNav ul li:hover {
+      .mobileMenu ul li:hover {
         background: none;
         border: 1px solid #604d49; }
-        .mobileNav ul li:hover a {
+        .mobileMenu ul li:hover a {
           color: #604d49; }
-  .mobileNav .showNav {
-    bottom: 0; }
+  .mobileMenu .showNav {
+    left: 0; }
 
 .fa-angle-double-down {
   font-size: 60px;
