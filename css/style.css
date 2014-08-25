@@ -75,8 +75,7 @@ figure {
 
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0; }
 
 pre {
@@ -112,9 +111,7 @@ input {
   line-height: normal; }
 
 input[type=checkbox], input[type=radio] {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0; }
 
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
@@ -272,8 +269,7 @@ LOGO
     padding: 10% 0 7% 4%;
     width: 52%;
     height: auto;
-    -webkit-transition: all 1s;
-            transition: all 1s; }
+    transition: all 1s; }
     .logo .logoContent .logo-text .logoWordmark {
       fill: #604d49;
       height: auto;
@@ -331,13 +327,11 @@ nav {
       width: 19%;
       background: #604d49;
       border: 1px solid #604d49;
-      -webkit-transition: all 0.5s;
-              transition: all 0.5s; }
+      transition: all 0.5s; }
       nav ul li a {
         color: #eae6e6;
         padding: 0 2%;
-        -webkit-transition: all 0.5s;
-                transition: all 0.5s; }
+        transition: all 0.5s; }
       nav ul li:hover {
         background: none;
         border: 1px solid #604d49; }
@@ -347,8 +341,7 @@ nav {
 .fa-angle-double-down {
   font-size: 60px;
   margin-top: 3%;
-  -webkit-transition: all 1s;
-          transition: all 1s; }
+  transition: all 1s; }
   .fa-angle-double-down:hover {
     margin-top: 5%; }
 
@@ -400,13 +393,9 @@ CONTENT
     width: 9%;
     fill: #604d49; }
   .skills li #responsive {
-    -webkit-transform: scaleX(-1);
-        -ms-transform: scaleX(-1);
-            transform: scaleX(-1); }
+    transform: scaleX(-1); }
   .skills li #branding {
-    -webkit-transform: rotate(-25deg);
-        -ms-transform: rotate(-25deg);
-            transform: rotate(-25deg); }
+    transform: rotate(-25deg); }
   .skills li h3 {
     font-size: 18px;
     padding: 2.5% 2%;
@@ -415,8 +404,7 @@ CONTENT
     position: relative;
     right: 2.85%;
     cursor: default;
-    -webkit-transition: all 0.6s;
-            transition: all 0.6s; }
+    transition: all 0.6s; }
   .skills li:hover h3 {
     right: -2%; }
   .skills li:hover .html {
@@ -433,20 +421,17 @@ CONTENT
     width: 33.33%;
     height: 300px;
     overflow: hidden;
-    -webkit-transition: background-size 0.15s linear;
-            transition: background-size 0.15s linear; }
+    transition: background-size 0.15s linear; }
     .portfolioPieces .piece .pieceCaption {
       width: 100%;
       height: 100%;
       padding: 40% 5% 20% 5%;
       background: rgba(96, 77, 73, 0.35);
-      -webkit-transition: padding 0.15s linear, background 0.15s linear;
-              transition: padding 0.15s linear, background 0.15s linear; }
+      transition: padding 0.15s linear, background 0.15s linear; }
       .portfolioPieces .piece .pieceCaption h4, .portfolioPieces .piece .pieceCaption h1 {
         color: #fff;
         opacity: 0;
-        -webkit-transition: opacity 0.15s;
-                transition: opacity 0.15s; }
+        transition: opacity 0.15s; }
       .portfolioPieces .piece .pieceCaption h4 {
         padding-bottom: 3.5%;
         margin-bottom: 3.5%;
@@ -511,8 +496,7 @@ CONTENT
       .questions .qButton .qmark .qmarkIcon {
         fill: #604d49;
         width: 100%;
-        -webkit-transition: all 0.6s;
-                transition: all 0.6s; }
+        transition: all 0.6s; }
     .questions .qButton .ask {
       display: inline-block;
       width: 79%;
@@ -524,8 +508,7 @@ CONTENT
       position: relative;
       right: 7.5%;
       top: 0;
-      -webkit-transition: all 0.6s;
-              transition: all 0.6s; }
+      transition: all 0.6s; }
     .questions .qButton:hover .qmarkIcon {
       fill: #68c2c3; }
     .questions .qButton:hover .ask {
@@ -544,8 +527,7 @@ CONTENT
     right: -200%;
     padding: 5% 6%;
     margin: 2% 0;
-    -webkit-transition: all 1.5s;
-            transition: all 1.5s; }
+    transition: all 1.5s; }
     .answers .ansCard:nth-child(3) {
       margin-bottom: 0; }
   .answers .answerIn {
@@ -564,14 +546,12 @@ CONTENT
       .contact .socialLinks .social h5 {
         display: inline-block;
         vertical-align: middle;
-        -webkit-transition: all 0.6s;
-                transition: all 0.6s; }
+        transition: all 0.6s; }
       .contact .socialLinks .social .socialIcon {
         width: 19%;
         fill: #604d49;
         background: none;
-        -webkit-transition: all 0.6s;
-                transition: all 0.6s; }
+        transition: all 0.6s; }
       .contact .socialLinks .social h5 {
         width: 70%;
         padding: 5% 0 5% 4%;
@@ -657,23 +637,22 @@ footer {
 .logo-small {
   display: inline-block;
   vertical-align: middle;
-  width: 50%; }
+  width: 42%; }
   .logo-small .logoLetterSmall,
   .logo-small .logoWordmarkSmall {
     display: inline-block;
     fill: #604d49;
     vertical-align: middle; }
   .logo-small .logoLetterSmall {
-    width: 22%; }
+    width: 27%; }
   .logo-small .logoWordmarkSmall {
-    width: 55%;
+    width: 66%;
     padding: 8% 0 6% 4%;
     border-left: 1px solid #604d49;
     background: url("../images/background/greyzz/greyzz.png");
     position: relative;
-    right: 5.85%;
-    -webkit-transition: all 0.6s;
-            transition: all 0.6s; }
+    right: 7.15%;
+    transition: all 0.6s; }
   .logo-small:hover .logoWordmarkSmall {
     right: -2.5%; }
 
@@ -681,7 +660,7 @@ footer {
   display: inline-block;
   vertical-align: middle;
   text-align: right;
-  width: 49.5%; }
+  width: 56.5%; }
 
 .copyright a {
   color: #251916; }

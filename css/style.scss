@@ -946,7 +946,7 @@ footer {
 	// float: left;
 	display: inline-block;
 	vertical-align: middle;
-	width: 50%;
+	width: 42%;
 	// min-width: 350px;
 
 	.logoLetterSmall,
@@ -957,16 +957,16 @@ footer {
 	}
 
 	.logoLetterSmall {
-		width: 22%;
+		width: 27%;
 	}
 
 	.logoWordmarkSmall {
-		width: 55%;
+		width: 66%;
 		padding: 8% 0 6% 4%;
 		border-left: 1px solid $font;
 		background: $plainBack;
 		position: relative;
-		right: 5.85%;
+		right: 7.15%;
 		transition: all 0.6s;
 	}
 
@@ -983,7 +983,7 @@ footer {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: right;
-	width: 49.5%;
+	width: 56.5%;
 	// margin-top: 1%;
 }
 

@@ -1,0 +1,95 @@
+@media (max-width: 1075px) {
+	.skillsOne {
+		margin-left: 15%;
+	}
+
+	.questions {
+		margin-right: 2.75%;
+	}
+}
+
+@media (max-width: 1000px) {
+	h1 {
+		font-size: 17px;
+	}
+
+	h2 {
+		font-size: 27px;
+	}
+
+	h3 {
+		font-size: 20px;
+		line-height: 1.35;
+	}
+
+	h5 {
+		font-size: 17px;
+	}
+
+	.logo {
+		width: 88%;
+		padding-top: 16%;
+
+		.logoContent .logo-text {
+			right: 18.5%;
+		}
+	}
+
+	.header-text {
+		margin: 10% auto;
+
+		.brief {
+			width: 88%;
+		}
+	} // End .header-text
+
+	nav ul li {
+		padding: 1.5% 0.25%;
+	}
+
+	.skillsOne {
+		margin-left: 10%;
+	}
+
+	.portfolioPieces {
+
+		.piece {
+			width: 50%;
+			height: 250px;
+
+			&:hover {
+				background-size: auto 137%;
+
+				.pieceCaption {
+					padding-top: 25%;
+				}
+			} // End .piece:hover
+		} // End .piece
+
+		.piece1,
+		.piece2,
+		.piece3 {
+			background-size: auto 124%;
+		}
+
+		.piece3 {
+			float: none;
+			margin: 0 auto;
+		}
+	} // End .portfolioPieces
+
+	.questions .qButton .ask {
+
+		h3 {
+			font-size: 18px;
+		}
+	}
+
+	.answers .ansCard {
+
+		h1 {
+			font-size: 16px;
+			line-height: 1.35;
+		}
+	}
+} // End max-width 1000px

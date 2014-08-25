@@ -21,7 +21,8 @@ module.exports = function(grunt) {
    sass: {
    	dist: {
    		files: {
-   			'css/style.css' : 'css/style.scss'
+   			'css/style.css' : 'css/style.scss',
+            'css/mq.css' : 'css/mq.scss'
    		}
    	}
    },
@@ -31,7 +32,8 @@ module.exports = function(grunt) {
    		browsers: ['last 5 version', 'ie 8', 'ie 9']
    	},
    	no_dest: {
-   		src: 'css/style.css'
+   		src: 'css/style.css',
+         src: 'css/mq.css'
    	}
    },
 
@@ -51,7 +53,8 @@ module.exports = function(grunt) {
    			compress: true
    		},
    		files: {
-   			'css/mini.css' : 'css/style.css'
+   			'css/mini.css' : 'css/style.css',
+            'css/mqMini.css' : 'css/mq.css'
    		}
    	}
    }
