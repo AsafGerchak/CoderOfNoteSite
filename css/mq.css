@@ -136,4 +136,46 @@
     display: block; }
 
   .mobileMenu {
-    display: block; } }
+    display: block; }
+
+  .wrapper {
+    width: 85%; }
+
+  .skills ul {
+    text-align: center; }
+    .skills ul:last-child {
+      text-align: center; }
+
+  .skills li {
+    display: block;
+    width: 100%;
+    border: none; }
+    .skills li .skillsIcon {
+      width: 20%; }
+    .skills li h3 {
+      font-size: 21px;
+      right: 6.25%;
+      padding: 7.5% 0 7.5% 3.5%;
+      margin: 1.5% 0; }
+
+  .skillsOne,
+  .skillsTwo {
+    margin-left: 5%; }
+
+  .portfolioPieces h3 {
+    margin-bottom: 7%; }
+  .portfolioPieces .piece {
+    width: 100%;
+    height: 300px; }
+    .portfolioPieces .piece:hover {
+      background-size: 113% auto; }
+      .portfolioPieces .piece:hover .pieceCaption {
+        padding: 22% 5% 27% 5%; }
+  .portfolioPieces .piece1,
+  .portfolioPieces .piece2,
+  .portfolioPieces .piece3 {
+    background-size: 100% auto; }
+
+  .copyright {
+    width: 100%;
+    margin: 4% 0 2% 0; } }
