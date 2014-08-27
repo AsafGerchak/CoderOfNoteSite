@@ -260,6 +260,7 @@ header {
 	height: 115%;
 	// min-height: 600px;
 	width: auto;
+	overflow-x: hidden;
 	// box-shadow: 0 5px 5px $font;
 }
 
@@ -731,6 +732,7 @@ CONTENT
 
 .faq {
 	// margin-bottom: 7%;
+	overflow: hidden;
 }
 
 .questions {

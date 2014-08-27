@@ -286,7 +286,8 @@ JUMBOTRON
 header {
   background: url("../images/background/greyzz/greyzz.png");
   height: 115%;
-  width: auto; }
+  width: auto;
+  overflow-x: hidden; }
 
 .banner {
   width: 80%;
@@ -537,6 +538,9 @@ CONTENT
   right: 3.5%; }
 
 /* ========= FAQ Questions Card ========= */
+.faq {
+  overflow: hidden; }
+
 .questions {
   width: 40%;
   height: 100%;
