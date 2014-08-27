@@ -179,3 +179,29 @@
   .copyright {
     width: 100%;
     margin: 4% 0 2% 0; } }
+@media (max-width: 550px) {
+  .skills li h3 {
+    font-size: 14px; }
+
+  .portfolioPieces .piece1,
+  .portfolioPieces .piece2,
+  .portfolioPieces .piece3 {
+    background-size: auto 100%; }
+
+  #headshot {
+    float: none;
+    width: 100%; }
+
+  .contact .socialLinks .social {
+    float: none;
+    width: 100%;
+    margin-bottom: 3%; }
+
+  .logo-small {
+    display: block;
+    width: 100%;
+    margin-top: 5%; }
+
+  .copyright {
+    text-align: left;
+    margin: 10% 0; } }
