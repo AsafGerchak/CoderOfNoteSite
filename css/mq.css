@@ -142,9 +142,11 @@
     width: 85%; }
 
   .skills ul {
-    text-align: center; }
+    text-align: left;
+    padding-left: 10%;
+    margin-bottom: 0; }
     .skills ul:last-child {
-      text-align: center; }
+      text-align: left; }
 
   .skills li {
     display: block;
@@ -167,14 +169,25 @@
   .portfolioPieces .piece {
     width: 100%;
     height: 300px; }
+    .portfolioPieces .piece .pieceCaption {
+      padding: 22% 5% 27% 5%;
+      background: rgba(96, 77, 73, 0.45); }
     .portfolioPieces .piece:hover {
       background-size: 113% auto; }
       .portfolioPieces .piece:hover .pieceCaption {
-        padding: 22% 5% 27% 5%; }
+        padding: 22% 5% 27% 5%;
+        background: rgba(96, 77, 73, 0.45); }
   .portfolioPieces .piece1,
   .portfolioPieces .piece2,
   .portfolioPieces .piece3 {
     background-size: 100% auto; }
+
+  .portfolioPieces .piece:hover {
+    background-size: 100% auto; }
+
+  .portfolioPieces .piece .pieceCaption h4,
+  .portfolioPieces .piece .pieceCaption h1 {
+    opacity: 1; }
 
   .copyright {
     width: 100%;
@@ -187,6 +200,20 @@
   .portfolioPieces .piece2,
   .portfolioPieces .piece3 {
     background-size: auto 100%; }
+
+  .portfolioPieces .piece:hover {
+    background-size: auto 100%; }
+
+  .portfolioPieces .piece .pieceCaption {
+    padding: 22% 5% 27% 5%;
+    background: rgba(96, 77, 73, 0.45); }
+
+  .portfolioPieces .piece:hover .pieceCaption {
+    background: rgba(96, 77, 73, 0.45); }
+
+  .portfolioPieces .piece .pieceCaption h4,
+  .portfolioPieces .piece .pieceCaption h1 {
+    opacity: 1; }
 
   #headshot {
     float: none;

@@ -512,7 +512,8 @@ CONTENT
     background-size: auto 100%; }
   .portfolioPieces .piece2 {
     background: url("../images/portfolioImages/euniceArt.png") center center no-repeat;
-    background-size: auto 100%; }
+    background-size: auto 100%;
+    display: none; }
   .portfolioPieces .piece3 {
     background: url("../images/portfolioImages/heather.jpg") center center no-repeat;
     background-size: auto 100%; }

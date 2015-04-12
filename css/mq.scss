@@ -242,10 +242,12 @@
 	}
 
 	.skills ul {
-		text-align: center;
+		text-align: left;
+		padding-left: 10%;
+		margin-bottom: 0;
 
 		&:last-child {
-			text-align: center;
+			text-align: left;
 		}
 	}
 
@@ -281,11 +283,17 @@
 			width: 100%;
 			height: 300px;
 
+			.pieceCaption {
+				padding: 22% 5% 27% 5%;
+				background: rgba(96,77,73,0.45);
+			}
+
 			&:hover {
 				background-size: 113% auto;
 
 				.pieceCaption {
 					padding: 22% 5% 27% 5%;
+					background: rgba(96,77,73,0.45);
 				}
 			}
 		} // End .piece
@@ -296,6 +304,15 @@
 			background-size: 100% auto;
 		}
 	} //End .portfolioPieces
+
+	.portfolioPieces .piece:hover {
+		background-size: 100% auto;
+	}
+
+	.portfolioPieces .piece .pieceCaption h4,
+	.portfolioPieces .piece .pieceCaption h1 {
+		opacity: 1;
+	}
 
 	.copyright {
 		width: 100%;
@@ -312,6 +329,24 @@
 	.portfolioPieces .piece2,
 	.portfolioPieces .piece3 {
 		background-size: auto 100%;
+	}
+
+	.portfolioPieces .piece:hover {
+		background-size: auto 100%;
+	}
+
+	.portfolioPieces .piece .pieceCaption {
+		padding: 22% 5% 27% 5%;
+		background:rgba(96,77,73,0.45);
+	}
+
+	.portfolioPieces .piece:hover .pieceCaption {
+		background:rgba(96,77,73,0.45);
+	}
+
+	.portfolioPieces .piece .pieceCaption h4,
+	.portfolioPieces .piece .pieceCaption h1 {
+		opacity: 1;
 	}
 
 	#headshot {
